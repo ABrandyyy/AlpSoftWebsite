@@ -16,11 +16,10 @@
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" type="image/x-icon"
         href="https://scontent-xsp1-2.xx.fbcdn.net/v/t39.30808-6/301749980_611367303697408_1352892433533406887_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gsxS9mTzgvAQ7kNvgEny_za&_nc_ht=scontent-xsp1-2.xx&oh=00_AYCRbICRHbm4Tr06wM_sWXUOEq1JFAYV6DSCyCApbSX-IA&oe=6676C0D7">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
             .smartphone {
@@ -32,7 +31,7 @@
                 height: 20px;
                 width: 20px;
                 font-size: 10px;
-                margin-inline-start: -11%;
+                margin-inline-start: -16%;
             }
 
             .responsiveDropdown {
@@ -75,54 +74,6 @@
             .contactUsCenter {
                 text-align: end;
             }
-
-            .enterpriseSingapore {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 150%;
-            }
-
-            .CAG {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 240%;
-            }
-
-            .BCA {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 240%;
-            }
-
-            .JTC {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 200%;
-            }
-
-            .PNS {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 170%;
-                padding-bottom: 90%;
-            }
-
-            .descriptionMargin {
-                margin-left: 10%;
-            }
-
-            .BCAdescriptionMargin {
-                margin-left: 2%;
-            }
-
-            .JTCdescriptionMargin {
-                margin-left: 2%;
-            }
         }
 
         @media only screen and (min-width: 601px) {
@@ -133,19 +84,6 @@
             .contactUsSpaceOut {
                 gap: 10rem
             }
-        }
-
-        .gradient {
-            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
         }
 
         @keyframes fadeInUp {
@@ -164,10 +102,6 @@
             animation: fadeInUp 0.5s ease-out forwards;
         }
 
-        .nav-linkOurValues {
-            color: rgb(0, 0, 0);
-            transition: color 0.3s ease;
-        }
 
         .scrolled .nav-link {
             color: black;
@@ -186,178 +120,256 @@
             /* Change this value to adjust the thickness */
         }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .animated-element {
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-            /* 2s for the duration of the animation */
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-            transition: transform 2s ease-in-out;
-        }
-
-        .nowrap-text {
-            white-space: nowrap;
-        }
-
         .copyright {
             position: absolute;
-            bottom: -164%;
+            bottom: -348%;
             right: 40%;
+        }
+
+        .logo {
+            position: absolute;
+            right: -5%;
+            bottom: 20%;
+            z-index: 100;
+        }
+
+        .singaporeSkyline {
+            position: absolute;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
         }
     </style>
 </head>
 
 <body class="leading-normal tracking-normal text-white"
     style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
-    <!-- Navbar -->
-    <app-navbar2>
-    </app-navbar2>
+    <!--Nav-->
+    <app-navbar></app-navbar>
+    <div>
+        <img src="images/SingaporeCitySkyline.jpg" class="singaporeSkyline" />
+    </div>
+    <div class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-96 overflow-hidden rounded-lg md:h-96 mb-96" data-aos="flip-right"
+            style="color: #354183;">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out absolute block -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Powerful and effect
+                    <br>
+                    cooperation lasting for years
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Simplify your business
+                    <br>
+                    We are ready to help you
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Delivering the highest level
+                    <br>
+                    of professional service
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Powerful and effect
+                    <br>
+                    cooperation lasting for years
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Simplify your business
+                    <br>
+                    We are ready to help you
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 6 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Delivering the highest level
+                    <br>
+                    of professional service
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+        </div>
+    </div>
     <section class="bg-white py-8">
-        <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
-                IT Projects
+        <div class="container max-w-5xl mx-auto m-8">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="flip-up">
+                Our Services
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <div class="pt-16 ml-48 flex items-center enterpriseSingapore" data-aos="zoom-in-up">
-                <img class="img-responsive" src="images/enterpriseSingapore.jpg" alt="ESG" width="380" height="200" />
-                <div class="ml-48 descriptionMargin">
-                    <p style="font-size: xx-large;" class="text-black font-bold">
-                        Enterprise Singapore
-                        (ESG)</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Web-based applications for Startup Network Singapore</p>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • User base of more than 4000 startups, investors and incubators</p>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Enhancements on the Platform and Support on Monitoring the various Metrics of the Traffic and
-                        User Engagement
-                        <br>
-                    </p>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Maintenance of the Platform and Backend Administrative Functions</p>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Providing Cloud Services Setup and Monthly Backups</p>
+            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/ITservices.png" alt="IT Services"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">IT Services</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• Data Backup/Data Recovery</li>
+                            <li>• Software Solutions</li>
+                            <li>• AWS (Amazon Web Services) Infrastructure</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/eGovernmentTechnology.jpg" alt="E-Government Technology"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">E-Government Technology</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• Digital Government Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/networkOffering.jpg" alt="Network Offerings"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">Network Offerings</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• Client-Server Architecture</li>
+                            <li>• Cloud Networks</li>
+                            <li>• AWS (Amazon Web Services)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <br>
             <br>
-            <div class="pt-16 ml-48 flex items-center CAG" data-aos="zoom-in-up">
-                <img class="img-responsive" src="images/changiAirportGroup.png" alt="ESG" width="380" height="200" />
-                <div class="ml-48 descriptionMargin">
-                    <p style="font-size: xx-large; font-weight: 700;" class="text-black font-bold">Changi Airport Group
-                        (CAG)</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Upgrade the Monitoring on Intranet Microsoft Dynamics 365</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Remove bottlenecks that significantly slow down the current setup</p>
+            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/fintechSolutions.jpg" alt="Fintech Solutions"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">Fintech Solutions</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• API Library Interface</li>
+                            <li>• E-Wallet and Payment System</li>
+                            <li>• FX Platform and Cloud Adoption</li>
+                            <li>• Crypto Payment Gateway</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="pt-16 ml-48 flex items-center BCA" data-aos="zoom-in-up">
-                <img class="img-responsive" src="images/buildingConstructionAuthority.png" alt="ESG" width="380"
-                    height="200" />
-                <div class="ml-48 BCAdescriptionMargin">
-                    <p style="font-size: xx-large; font-weight: 700;" class="text-black font-bold">Building and
-                        Construction Authority (BCA)</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • 36 Web applications for Singapore agency in charge
-                        <br>of buildings, structures and infrastructure
-                    </p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Online Application Enquiry System</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • CoreTrade Registration System</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Fingerprint Verification System</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Construction Workforce Registration System</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Online Permit to Operate System</p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/securitySolutions.jpg" alt="Security Solutions"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">Security Solutions</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• Cyber Security Software</li>
+                            <li>• Managed Detection and Response (MDR)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="pt-16 ml-48 flex items-center JTC" data-aos="zoom-in-up">
-                <img class="img-responsive" src="images/jtcCoporation.png" alt="ESG" width="380" height="200" />
-                <div class="ml-48 JTCdescriptionMargin">
-                    <p style="font-size: xx-large; font-weight: 700;" class="text-black">JTC Corporation</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • IBM WebSphere Maintenance
-                    </p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Jurong Island Vehicle Tracking - Infrastructure Optimisation</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Support on MS SQL and AIX Troubleshooting</p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/technologyResource.jpg" alt="Technology Resource"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
+                        <div class="font-bold text-2xl mb-2 text-black">Technology Resource</div>
+                        <ul class="text-gray-700 text-base space-y-4">
+                            <li>• Sourcing Engineers and Technology Staff</li>
+                        </ul>
+                    </div>
                 </div>
-                <br>
-            </div>
-            <div class="pt-16 ml-48 flex items-center PNS" data-aos="zoom-in-up">
-                <img class="img-responsive" src="images/pnShipping.png" alt="ESG" width="380" height="200" />
-                <div class="ml-48 descriptionMargin">
-                    <p style="font-size: xx-large; font-weight: 700;" class="text-black">PN Shipping</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Data Migration from old to new System</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • System Maintenance</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • System Redesign</p>
-                    <br>
-                    <p class="heading_main text_align_center font-family text-xl text-black py-2">
-                        • Rebuilt Legacy System by leveraging Modern Frameworks</p>
-                </div>
-                <br>
             </div>
         </div>
     </section>
+    <section class="bg-white py-8">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+                Our Company Video
+            </h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+        </div>
+        <div class="row" style="padding-left: 20%; padding-right: 20%;">
+            <div class="col md-12" data-aos="zoom-in-up">
+                <div class="iframe-container video">
+                    <iframe id="youtubeFrame" src="https://www.youtube.com/embed/UhsntWMThsQ" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="border-radius: 25px; width: 100%; height: 100%;"></iframe>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="bg-white py-8" data-aos="zoom-in-up">
+            <div class="mx-auto px-2 pt-4 pb-12 text-gray-800">
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                    The AlpSoft Outcome
+                </h2>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+                <p class="text-xl outcome text-center" style="padding-left: 20%; padding-right: 20%;">Our
+                    background in
+                    working with our
+                    customers in the enterprise and our capabilities in leveraging
+                    technology have allowed us to work on many cutting edge engagements where
+                    technology and domain competencies form an integral part
+                    in conceptualizing a workable solution. By working with us, we bring to the
+                    table a culture of success by asking the right questions
+                    and providing our approach and recommendations that is unique. We make sure
+                    those decisions get translated quickly into action leaving
+                    organizations stronger than when we arrive.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
+
+    <!-- Footer -->
     <section class="text-center" style="background-color: #354183">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
             Contact Us
@@ -464,16 +476,14 @@
                 </div>
             </div>
         </div>
-        <div class="pt-9">
+        <div class="pt-9 pb-5">
             <p>© Copyrights 2024 AlpSoft Technologies</p>
         </div>
     </section>
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="component.js"></script>
+    <script src="./component.js"></script>
     <script>
+        // Navbar
         var scrollpos = window.scrollY;
         var header = document.getElementById("header");
         var navcontent = document.getElementById("nav-content");
@@ -530,35 +540,6 @@
                 dropdownMenu.classList.add('hidden');
             }
         });
-    </script>
-    <script>
-        /*Toggle dropdown list*/
-        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-        //Carousel
-        const carouselElement = document.getElementById('carousel-example');
-
-        const items = [
-            {
-                position: 0,
-                el: document.getElementById('carousel-item-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-item-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-item-3'),
-            },
-        ];
-
-        // instance options object
-        const instanceOptions = {
-            id: 'carousel-example',
-            override: true
-        };
-
         var navMenuDiv = document.getElementById("nav-content");
         var navMenu = document.getElementById("nav-toggle");
 
@@ -591,70 +572,31 @@
             }
             return false;
         }
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText2');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText3');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText4');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText5');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText6');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText7');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText8');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
+
+
+        //Carousel
+        // const carouselElement = document.getElementById('carousel-example');
+
+        // const items = [
+        //     {
+        //         position: 0,
+        //         el: document.getElementById('carousel-item-1'),
+        //     },
+        //     {
+        //         position: 1,
+        //         el: document.getElementById('carousel-item-2'),
+        //     },
+        //     {
+        //         position: 2,
+        //         el: document.getElementById('carousel-item-3'),
+        //     },
+        // ];
+
+        // instance options object
+        // const instanceOptions = {
+        //     id: 'carousel-example',
+        //     override: true
+        // };
         AOS.init({
             duration: 1200, // duration of the animation in milliseconds
             easing: 'ease-in-out', // easing function for the animation

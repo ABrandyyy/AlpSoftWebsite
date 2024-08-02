@@ -256,7 +256,20 @@
             transform: rotateY(180deg);
         }
 
-        .flip-card-front,
+        .flip-card-front {
+            box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border: 1px;
+            border-radius: 1rem;
+        }
+
         .flip-card-back {
             box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
             position: absolute;
@@ -267,12 +280,11 @@
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-            border: 1px #354183;
+            border: 1px;
             border-radius: 1rem;
         }
 
         .flip-card-back {
-            background: #354183;
             color: white;
             transform: rotateY(180deg);
         }
@@ -299,8 +311,7 @@
                 <div class="flip-card-front">
                     <img src="images/buildingConstructionAuthority.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back" style="text-align: left; padding-left: 10%;">
-                    <p class="font-bold">Building Construction Authority</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
                     <p>• 36 Web applications for Singapore agency in charge
                         of buildings, structures and infrastructure</p>
@@ -322,8 +333,7 @@
                 <div class="flip-card-front">
                     <img src="images/changiAirportGroup.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">Changi Airport Group</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
                     <p>• Upgrade the Monitoring on Intranet Microsoft Dynamics 365</p>
                     <br>
@@ -336,8 +346,7 @@
                 <div class="flip-card-front">
                     <img src="images/enterpriseSingapore.jpg" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">Enterprise Singapore</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
                     <p>• Web-based applications for Startup Network Singapore</p>
                     <br>
@@ -355,8 +364,7 @@
                 <div class="flip-card-front">
                     <img src="images/jtcCoporation.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">JTC Corporation</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
                     <p>• IBM WebSphere Maintenance</p>
                     <br>
@@ -371,14 +379,8 @@
                 <div class="flip-card-front">
                     <img src="images/NEC.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">NEC</p>
-                    <br>
-                    <p>• Wintel Engineer</p>
-                    <br>
-                    <p>• ServiceNow Developer</p>
-                    <br>
-                    <p>• System Engineer</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
+                    <p>To be added</p>
                 </div>
             </div>
         </div>
@@ -387,8 +389,7 @@
                 <div class="flip-card-front">
                     <img src="images/pnShipping.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">PN Shipping</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
                     <p>• Data Migration from old to new System</p>
                     <br>
@@ -417,37 +418,18 @@
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="images/Micron.png" style="padding: 10%;">
+                    <img src="images/Broadcom.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">Micron</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
-                    <p>• 36 Web applications for Singapore agency in charge
-                        of buildings, structures and infrastructure</p>
+                    <p>• Providing VLSI (Very Large Scale Integration) services to Broadcom, delivering cutting-edge
+                        solutions that encompass the entire spectrum of the VLSI design process.</p>
                     <br>
-                    <p>• Online Application Enquiry System</p>
+                    <p>• Our expertise includes system-level design, RTL coding, synthesis, physical design, and
+                        verification.</p>
                     <br>
-                    <p>• CoreTrade Registration System</p>
-                    <br>
-                    <p>• Fingerprint Verification System</p>
-                    <br>
-                    <p>• Construction Workforce Registration System</p>
-                    <br>
-                    <p>• Online Permit to Operate System</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card" data-aos="zoom-in-up">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/VersuniPhilips.png" style="padding: 10%;">
-                </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">Versuni / Philips</p>
-                    <br>
-                    <p>• Upgrade the Monitoring on Intranet Microsoft Dynamics 365</p>
-                    <br>
-                    <p>• Remove bottlenecks that significantly slow down the current setup</p>
+                    <p>• Leveraging advanced tools and methodologies, we ensure that Broadcom’s integrated circuits meet
+                        the highest standards of performance.</p>
                 </div>
             </div>
         </div>
@@ -456,15 +438,35 @@
                 <div class="flip-card-front">
                     <img src="images/hp.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">HP</p>
+                <div class="flip-card-back"
+                    style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%; display: flex; justify-content: center; align-items: center;">
                     <br>
-                    <p>• Web-based applications for Startup Network Singapore</p>
+                    <p>• Delivering comprehensive IT services to HP, encompassing both frontend and backend application
+                        development, including AWS development.</p>
                     <br>
-                    <p>• User base of more than 4000 startups, investors and incubators</p>
+                    <p>• Project management approach that utilizes Scrum and Agile methodologies.</p>
                     <br>
-                    <p>• Enhancements on the Platform and Support on Monitoring the various Metrics of the Traffic and
-                        User Engagement</p>
+                    <p>"Thanks for your help in supporting us, and establishing the cause of the problem. Much
+                        appreciated." - <img src="images/clients/hplogo.png" height="40px" width="40px"
+                            style="display: inline;"></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" data-aos="zoom-in-up">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/Mediatek.png" style="padding: 10%;">
+                </div>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
+                    <br>
+                    <p>• Provide comprehensive Physical Design (PD) implementation services for MediaTek's smartphone
+                        integrated circuits (ICs).</p>
+                    <br>
+                    <p>• Our expertise spans floorplanning, placement, clock tree synthesis, routing, timing analysis,
+                        power optimization, signal integrity analysis, and design rule checking.</p>
+                    <br>
+                    <p>• Deliver high-performance and power-efficient ICs, ensuring their competitive edge in
+                        the mobile market.</p>
                 </div>
             </div>
         </div>
@@ -473,16 +475,17 @@
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="images/BroadcomMediatek.png" style="padding: 10%;">
+                    <img src="images/Micron.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">JTC Corporation</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
-                    <p>• IBM WebSphere Maintenance</p>
+                    <p>• Delivered engineering solutions to support their wafer and SSD operations etc.</p>
                     <br>
-                    <p>• Jurong Island Vehicle Tracking - Infrastructure Optimisation</p>
+                    • Our commitment was particularly evident during the COVID-19 pandemic when resources were
+                    critically constrained.</p>
                     <br>
-                    <p>• Support on MS SQL and AIX Troubleshooting</p>
+                    <p>"Alpsoft has demonstrated resilience and reliability as a partner." - <img
+                            src="images/clients/Micronlogo.png" height="40px" width="40px" style="display: inline;"></p>
                 </div>
             </div>
         </div>
@@ -491,32 +494,30 @@
                 <div class="flip-card-front">
                     <img src="images/NEC.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">NEC</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
-                    <p>• Wintel Engineer</p>
+                    <p>• Providing IT support services to NEC, focusing primarily on infrastructure and software
+                        development.</p>
                     <br>
-                    <p>• ServiceNow Developer</p>
-                    <br>
-                    <p>• System Engineer</p>
+                    <p>• Our collaboration with NEC ensures robust and reliable IT solutions that cater to their
+                        clients, primarily within the government sector.</p>
                 </div>
             </div>
         </div>
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="images/pnShipping.png" style="padding: 10%;">
+                    <img src="images/VersuniPhilips.png" style="padding: 10%;">
                 </div>
-                <div class="flip-card-back">
-                    <p class="font-bold">PN Shipping</p>
+                <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
                     <br>
-                    <p>• Data Migration from old to new System</p>
+                    <p>• Benefited from our comprehensive support in their engineering department.</p>
                     <br>
-                    <p>• System Maintenance</p>
+                    <p>• Our involvement spans R&D, product testing, and rigorous quality assurance, ensuring that their
+                        products meet the highest standards.</p>
                     <br>
-                    <p>• System Redesign</p>
-                    <br>
-                    <p>• Rebuilt Legacy System by leveraging Modern Frameworks</p>
+                    <p>"Good initiative and proactive on issues. Keep it up." - <img src="images/clients/Versuni.png"
+                            height="40px" width="40px" style="display: inline;"></p>
                 </div>
             </div>
         </div>
