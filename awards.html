@@ -11,6 +11,7 @@
     <meta name="description" content="AlpSoft Technologies" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -20,8 +21,77 @@
         href="https://scontent-xsp1-2.xx.fbcdn.net/v/t39.30808-6/301749980_611367303697408_1352892433533406887_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gsxS9mTzgvAQ7kNvgEny_za&_nc_ht=scontent-xsp1-2.xx&oh=00_AYCRbICRHbm4Tr06wM_sWXUOEq1JFAYV6DSCyCApbSX-IA&oe=6676C0D7">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
+        @media only screen and (max-width: 600px) {
+            .smartphone {
+                font-size: large;
+                padding-top: 10px;
+            }
+
+            .readMoreButton {
+                height: 20px;
+                width: 20px;
+                font-size: 10px;
+                margin-inline-start: -11%;
+            }
+
+            .responsiveDropdown {
+                color: black !important;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .smartphoneLogo {
+                padding-left: 30px;
+                padding-bottom: 10px;
+            }
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .video {
+                width: 400px;
+                height: 10% !important;
+            }
+
+            .outcome {
+                text-align: center;
+            }
+
+            .divider {
+                width: 250px;
+            }
+
+            .contactUsPadding {
+                padding-top: 40px;
+            }
+
+            .contactUsCenter {
+                text-align: end;
+            }
+
+            .awardLogo {
+                column-gap: 1px;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            .smartphoneLogo {
+                display: none;
+            }
+
+            .contactUsSpaceOut {
+                gap: 10rem
+            }
+        }
+
         .gradient {
-            background: linear-gradient(90deg, #85bbee 0%, #0a66dd 100%);
+            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
         }
 
         .gradient-text {
@@ -128,20 +198,20 @@
 
         .copyright {
             position: absolute;
-            bottom: -82%;
+            bottom: -164%;
             right: 40%;
         }
     </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
+<body class="leading-normal tracking-normal text-white"
+    style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
     <!-- Navbar -->
     <app-navbar2>
     </app-navbar2>
-    <section class="bg-white py-8" data-aos="fade-up">
+    <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                id="scrollingText" data-aos="zoom-out-left">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
                 Awards and Recognitions
             </h2>
             <div class="w-full mb-4">
@@ -149,70 +219,68 @@
             </div>
             <br>
             <br>
-            <div class="grid grid-rows-3 grid-flow-col gap-16">
-                <div class="row-span-4" data-aos="zoom-out">
+            <div class="grid grid-flow-col gap-16 awardLogo" style="padding-left: 20%; padding-right: 20%;">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/apicta.png" alt="apicta">
                 </div>
-                <div class="row-span-4" data-aos="zoom-out">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/goldenweb.png" alt="goldenweb">
                 </div>
-                <div class="row-span-4" data-aos="zoom-out">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/medal.png" alt="medal">
                 </div>
-                <div class="row-span-4" data-aos="zoom-out">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/trophy.png" alt="trophy">
                 </div>
-                <div class="row-span-4" data-aos="zoom-out">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/webmaster.png" alt="webmaster">
                 </div>
-                <div class="row-span-4" data-aos="zoom-out">
+                <div class="row-span-4" data-aos="zoom-in-up">
                     <img src="/images/awards/webmaster2.png" alt="webmaster2">
                 </div>
             </div>
-            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                id="scrollingText2" data-aos="zoom-out">
+            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
                 Group Achievements
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             <br>
-            <div class="text-center" data-aos="zoom-out">
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold text-black">•
+            <div class="text-center" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <p class="heading_main text_align_center font-family text-xl text-black">•
                     Received
                     Innovation Award in Splash Awards Wireless Jam for Ultra-Wide Band (UWB) Hospital Patient tracking
                     application which was also featured in UWB POC lab in IDA</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black">•
                     Nominated
                     for Best of ICT Business Application in the ICT Asia Pacific Award held in Thailand, Bangkok - for
                     Petro-Chem Terminal System.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black">•
                     Received
                     the GOLD award by the American Association of Webmasters.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black">•
                     Finalist in
                     the Singapore IT Youth Award 2004 on Macromedia technology showcases.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black">•
                     Launched a
                     Job Automation Service (iFORM+) with SingTel in September 2009, allowing companies to eliminate data
                     transfer from paper forms to computers.</p>
             </div>
     </section>
-    <section class="container mx-auto text-center py-6 mb-12">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+    <section class="text-center" style="background-color: #354183">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
             Contact Us
         </h2>
         <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-6/6 opacity-25 my-0 py-0 rounded-t"></div>
+            <div class="h-1 mx-auto bg-white w-6/6 opacity-25 my-0 py-0 rounded-t divider"></div>
         </div>
-        <div class="py-7 container">
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <div style="display: inline-block; text-align: center; margin-right: 120px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTA
+        <div style="display: flex; align-items: center; justify-content: center;" class="address contactUsSpaceOut">
+            <div style="display: inline-block; text-align: center;" class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTA
                     AALEwEAmpwYAAAEFUlEQVR4nO2aXYhVVRTHj6KiNupojjTUQ+DHKJhUJL4EMxnSB4UopaJPvgpKL6Jlwaj1YEhvFaVBPU
                     ihZJIEoT5IGA7jJ5mICqKI4BeOMzU6Wc4v1tz/wc293rPPnbN33Yn+cGC457//a62z915rf0yS/I9KAOOB5cA2oBO4Dtz
                     Tc12/fQ4sA8Yl9QagBfgCuEN+9ALbgen1EMBYYCvwp5zr11ffALQqwEf0tOi3d4Ej4qLe+hAY/W8FMR04JWfuAzuAqTW0
@@ -228,36 +296,37 @@
                     goB1YW0FkrjdMhz5IHe95lO8jxg2jf5KTzl+J4mc+RYcDPcmTrINp/pbZ743hY+6WPXZ/9Bcyrod3LCqK3lpuuqHC2uWfy
                     3GvoFOWS2qxJ6gWUMs8vvu2ww/803W8UyXhRoFOPe9pJtnmGVL92m7OSegSlXSFKy41VtszXxHkrqVdQWob/JEd3W1Zz3
                     g0HftS7H9x3dQlKy5cb5dcQzlb5apQrtRgAXtc8sPnyCvCa/rYU/WIylMCDtdgtHQEZ1idDDZSq/k4FUDFnhhQoFb4O/QNAuEvN5D+MvwHicecgMX2K0wAAAABJRU5ErkJggg=="
-                        style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Address</p>
-                    <div class="py-4">
-                        <a href="https://www.google.com/maps/dir//alpsoft+technologies+pte+ltd/@1.3575578,103.74247
+                    style="display: inline-block; vertical-align: middle;">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Address</p>
+                <div class="py-4">
+                    <a href="https://www.google.com/maps/dir//alpsoft+technologies+pte+ltd/@1.3575578,103.74247
                             53,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da1bb89f6faa9b:0xfdab0347eb69440c!2m2!1d103.795927!2d1.2762809"
-                            target="_blank" style="text-decoration:none" onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">
-                            <p>100D Pasir Panjang Road,</p>
-                            <p>#03-01, Meissa</p>
-                            <p>Singapore 118520</p>
-                        </a>
-                    </div>
+                        target="_blank" style="text-decoration:none" onmouseover="style='text-decoration:underline'"
+                        onmouseout="style='text-decoration:none'">
+                        <p>100D Pasir Panjang Road,</p>
+                        <p>#03-01, Meissa</p>
+                        <p>Singapore 118520</p>
+                    </a>
                 </div>
-                <div style="display: inline-block; text-align: center; margin-right: 120px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAAL
+            </div>
+            <div style="display: inline-block; text-align: center;" class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAAL
                     EwEAmpwYAAAA0klEQVR4nO3asQ3CMBhE4VRsALsQlqOBwHawQ2CNh4xASoHQHTgWEvfVlv84fqW77l8BC+AIXKnvAgxlRou
                     DHJjfvsVByl8r1sLa7eTjtsL6/nkz1T74zbA7ce0KOAMnYFl7/6/MPYgcxJQbEZG0TElLRNIyJS0RScuUtEQkLVPSEpG0TE
                     lLRNIyJS0RScuUtEQkLVPSEpG0TElLRNIyJS0RScuUtEQkLVPSEpG0Pn/C0c+w9+ax91h771fDyuudue1aPXMaJjdT01gO0
                     eSZ06+6AaSZfPTEQjDVAAAAAElFTkSuQmCC" style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Phone</p>
-                    <div class="py-4">
-                        <a class="links" href="tel:+65-69087618" style="text-decoration:none"
-                            onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">+65 6908 7618</a>
-                        <p>Monday - Friday</p>
-                        <p>9:00 AM - 6:00 PM</p>
-                    </div>
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Phone</p>
+                <div class="py-4">
+                    <a class="links" href="tel:+65-69087618" style="text-decoration:none"
+                        onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">+65
+                        6908 7618</a>
+                    <p>Monday - Friday</p>
+                    <p>9:00 AM - 6:00 PM</p>
                 </div>
-                <div style="display: inline-block; text-align: center; margin-right: 120px; margin-bottom: 50px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEw
+            </div>
+            <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
+                class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEw
                     EAmpwYAAACJklEQVR4nO3YS6hNcRTH8b/3q9xEiJBuXQYMGEhJkVJSklJKMVB3amh0S3dkamggJWWiZGLAgJQUSSYMiAGRR97v
                     10f7Wrd2p3PuOffcfZxH+1t7ss9vrfX/9T/rv/faKZWUlJSUtAM9QtJrRlKXomeNoD91GeivZuQ9dqcuATvwppqRjD84hsmpQ8
                     EkHMHvqs2OodyPF9CXOgz0xdrEWoeqNnvFdj3AmtQhYBXuVbZBzVMLy3Erbn/E3rY6SCNr2oV3saa7+YNpzOMXM3Eq97c7gWlt
@@ -266,20 +335,21 @@
                     eoqN44xv3kgkWIDL9U6VOjmyU/F75LiGxU3kmJiRGuf8GcxuIC57Tp0s4jmlCCO5ZPvwKVLdwcoxtMtwM7RfcXCCtYsdrLAa9
                     yPda2yvotmCF6F5iLUF1C1+QsRcnI+Uv3A0Gwni1ftw9FLGRcwrqGZrRt1Y+HCub87FJe4NFznvaJWRXIGdeDuaHx+wpwV1Wv/
                     xAQMxEmTXQItq9OhXlNSlKI10GMod6TCUO9Jh6Nkd6XaSHiGVlJSUlKQ28BeJl84fDKCHpgAAAABJRU5ErkJggg=="
-                        style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;" class="pl-3">Email</p>
-                    <div class="py-4">
-                        <a class="links" href="mailto:info@alpsoft-tech.com" style="text-decoration:none"
-                            onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">info@alpsoft-tech.com</a>
-                    </div>
+                    style="display: inline-block; vertical-align: middle;">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;" class="pl-3">Email</p>
+                <div class="py-4">
+                    <a class="links" href="mailto:info@alpsoft-tech.com" style="text-decoration:none"
+                        onmouseover="style='text-decoration:underline'"
+                        onmouseout="style='text-decoration:none'">info@alpsoft-tech.com</a>
                 </div>
-                <div style="display: inline-block; text-align: center; margin-right: 120px; margin-bottom: 50px;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Social Media</p>
-                    <br>
-                    <div style="margin-top: 10px;">
-                        <a href="https://www.facebook.com/AlpSoftTechnologies/" target="_blank">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAAL
+            </div>
+            <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
+                class="contactUsPadding contactUsCenter">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Social Media</p>
+                <br>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.facebook.com/AlpSoftTechnologies/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAAL
                         EwEAmpwYAAADK0lEQVR4nO2Zz08TQRTHNzM0MQHixaMnI2jE4Mmr/4A/okej3r0oAn+AiYke9IYkpDNFDAkRqokHL4bEEzFe
                         lIqAJP5IDPvetrXQAhXSsrRjplYMboGdnd0th/0m79TN7Pcz8+bN7KthRIoUKZJUbNg8Qxj0UYZJwnCGcsxTjpv1yBOGH2u/
                         cbNXPmscCCVy7YRDP2XwmXIUSsFgXgIbg9m28I3fFS1yJinDZWXjDhBcIgzvyDHDMR/Hk4RjStv4f0EYThsJOBGodxqHS5R
@@ -292,10 +362,10 @@
                         ds2YDEIa3DK2PeobTzQIgHN4bSUENLfHF45TBavgA4ENbpS7Z7lNpbOkDgE0T5nnDT8l2n1sIPQCwCcNrRhCS7T43XTrPAAxW
                         fZ95hxh0yo6Z3wBEbtghs8MIRbI6xbFnt2u3GgDkaqVSu9p40WC2TZ7YhMOcKoC8qhB5wjblL6YGkpet2qpwnHhtlgqLRbuyb
                         leFDLNoVx6kVi15Ja61R4atU832GylSJONg6DekIcfGE7hs2QAAAABJRU5ErkJggg=="
-                                style="display: inline-block; vertical-align: middle;"></a>
-                        <a href="https://www.linkedin.com/company/alpsoft-enterprises/?originalSubdomain=sg"
-                            target="_blank">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
+                            style="display: inline-block; vertical-align: middle;"></a>
+                    <a href="https://www.linkedin.com/company/alpsoft-enterprises/?originalSubdomain=sg"
+                        target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
                         EAmpwYAAAByElEQVR4nO2ZP0/CQBjG22scXI2Tiauy+glc3MC4+iX8DA6G9IiDJsYBBhdNHJwcNRGIHY3xjoBCgkTEAUP8A63y
                         t7ymBVQEIq2mvSb3JM/UN5fnd+97N1wFgYuLi4tpSTJdQTKJI5lqCFNwxDLVRExjkkyW/xRexAQ7FhoPt4hJ0P7OuxwedS2FSM
                         AygDk2DIRHRhdkGrUOgInqdnDUs0wqNgAYCI6//G8AvkgazgsaaA0dlIIG8+G0twCUggbfFb/XvAWgNfQ+ALWuewtA8XoHfJG0C
@@ -303,13 +373,13 @@
                         CxCrAuPIf5dgE0Ntgzv/S4S2sHucheqcOrdtPPrMJsK4U+2omQgk4yVUG6jJPNTYBpreTA+ssHmQH6sq1FnsA7R/fe57aSo5d63
                         oH7K6FOADmHTDFRwjzQ0z5LYT4NWpRo24Otyx4+mkR07JlAON9noHgYFjE9MwygPFzwe3gqGsJX/ktA3S6QIJuhxcx2bAV/rMTI
                         RIw3uedPRNENcbG9s5zcXFxCU7pA5Jwntel+S2tAAAAAElFTkSuQmCC"
-                                style="display: inline-block; vertical-align: middle;"></a>
-                    </div>
+                            style="display: inline-block; vertical-align: middle;"></a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>© Copyrights 2024 AlpSoft Technologies</p>
-            </div>
+        </div>
+        <div class="pt-9 pb-5">
+            <p>© Copyrights 2024 AlpSoft Technologies</p>
+        </div>
     </section>
     <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

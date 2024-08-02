@@ -11,6 +11,7 @@
     <meta name="description" content="AlpSoft Technologies" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -88,25 +89,7 @@
         }
 
         .gradient {
-            background: linear-gradient(90deg, #85bbee 0%, #0a66dd 100%);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
-        }
-
-        .gradient-5cores {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
+            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
         }
 
         @keyframes fadeInUp {
@@ -198,18 +181,42 @@
             bottom: -164%;
             right: 40%;
         }
+
+        .box {
+            background-color: #354183;
+            width: 150px;
+            height: 120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .gradient-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* Or fixed if you want it to be fixed */
+        }
     </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient"
+<body class="leading-normal tracking-normal text-white"
     style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
     <!-- Navbar -->
     <app-navbar2>
     </app-navbar2>
     <section class="bg-white py-8">
-        <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                id="scrollingText" data-aos="zoom-in-up">
+        <div class="container mx-auto m-20">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
                 Our History
             </h2>
             <div class="w-full mb-4">
@@ -217,121 +224,176 @@
             </div>
             <br>
             <br>
-            <table class="table-auto border-collapse border border-black w-full text-black" data-aos="zoom-in-up">
-                <thead>
-                    <tr>
-                        <th class="border border-black px-4 py-5 h-20"
-                            style="font-size: 30px; color: white; background-color: #3355B6;">Year</th>
-                        <th class="border border-black px-4 py-5 h-20"
-                            style="font-size: 30px; color: white; background-color: #3355B6;">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6; background-color:#f5f2f2;">2013
-                        </td>
-                        <td class="border border-black px-4 py-5">• Launches its fourth subsidiary - Agensi Pekerjaan
-                            AlpSoft Sdn Bhd.
-                            <br>
-                            • Opens own office In Meissa.
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2012
-                        </td>
-                        <td class="border border-black px-4 py-5">• Acquires SolidWorks partnership.
-                            <br>
-                            • Celebrates a decade in business.
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2011
-                        </td>
-                        <td class="border border-black px-4 py-5"> • Managed IT Service launched for the manufacturing
-                            industry.<br>
-                            • Integrated Circuit Design Service launched for the semiconductor industry.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2010
-                        </td>
-                        <td class="border border-black px-4 py-5">• Wins Fingerprint Verification Project by Building &
-                            Construction Authority for worker testing centers In 7 countries.<br>
-                            • Staff strength over 50.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2009
-                        </td>
-                        <td class="border border-black px-4 py-5">• Moves Into Approved Vendor List of Motorola for
-                            resourcing service.<br>
-                            • Finalist of Singtel I.Challenge08 with solutions for Mobile Patient Health Records and
-                            Remote Vehicle Diagnostics.<br>
-                            • Provides IT solutions for the first time to Indonesia: Formotus Mobile Solution For Kraft
-                            field sales.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2008
-                        </td>
-                        <td class="border border-black px-4 py-5">• Launches third company - ZON Systems Pte. Ltd.<br>
-                            • Deploys OGIX For Land Transport Authority Remote Bus Monitoring.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2007
-                        </td>
-                        <td class="border border-black px-4 py-5">• Develops Open Geographical Information Xchange
-                            (OGIX) for SP Services's Wireless Workforce Management System.<br>
-                            • Reaches fifth year in business and grows 75% in turnover year-on-year.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2006
-                        </td>
-                        <td class="border border-black px-4 py-5">• First move towards international business: provides
-                            IT solutions overseas.<br>
-                            • For India Hyderabad City, Intelligent Car Parking Solution using Radio Frequency
-                            Identification (RFID).<br>
-                            • For Malaysia Sunningdale Tech, Video Security System.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2005
-                        </td>
-                        <td class="border border-black px-4 py-5">• Launches second company - Alpsoft Technologies Pte.
-                            Ltd.<br>
-                            • Provides IT support service for Faith Community Baptist Church, a mega church in
-                            Singapore.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2004
-                        </td>
-                        <td class="border border-black px-4 py-5">• Opens office in The Comtech.<br>
-                            • Develops mobile solution for Johnson & Johnson; field sales.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2003
-                        </td>
-                        <td class="border border-black px-4 py-5">• First move towards IT: develops Windows
-                            Administration Monitor for Singapore Police.<br>
-                            • Builds and delivers Linux RAID Storage Servers for Agilent.</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-black px-4 py-5 text-center"
-                            style="font-size: 30px; font-weight: bolder; color: #3355B6;background-color:#f5f2f2;">2002
-                        </td>
-                        <td class="border border-black px-4 py-5">• AlpSoft Enterprises founded.<br>
-                            • First year's income from resourcing service for Hewlett-Packard and PerkinElmer.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2002</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • AlpSoft Enterprises founded.<br>
+                    • First year's income from resourcing service for Hewlett-Packard and PerkinElmer.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2003</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • First move towards IT: develops Windows Administration Monitor for Singapore Police.<br>
+                    • Builds and delivers Linux RAID Storage Servers for Agilent.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2004</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Opens office in The Comtech.<br>
+                    • Develops mobile solution for Johnson & Johnson; field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2005</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Launches second company - Alpsoft Technologies Pte.
+                    Ltd.<br>
+                    • Provides IT support service for Faith Community Baptist Church, a mega church in
+                    Singapore.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2006</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • First move towards international business: provides
+                    IT solutions overseas.<br>
+                    • For India Hyderabad City, Intelligent Car Parking Solution using Radio Frequency
+                    Identification (RFID).<br>
+                    • For Malaysia Sunningdale Tech, Video Security System.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2007</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Develops Open Geographical Information Xchange
+                    (OGIX) for SP Services's Wireless Workforce Management System.<br>
+                    • Reaches fifth year in business and grows 75% in turnover year-on-year.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2008</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Launches third company - ZON Systems Pte. Ltd.<br>
+                    • Deploys OGIX For Land Transport Authority Remote Bus Monitoring.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2009</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Moves Into Approved Vendor List of Motorola for
+                    resourcing service.<br>
+                    • Finalist of Singtel I.Challenge08 with solutions for Mobile Patient Health Records and
+                    Remote Vehicle Diagnostics.<br>
+                    • Provides IT solutions for the first time to Indonesia: Formotus Mobile Solution For Kraft
+                    field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2010</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Wins Fingerprint Verification Project by Building &
+                    Construction Authority for worker testing centers In 7 countries.<br>
+                    • Staff strength over 50.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2011</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Managed IT Service launched for the manufacturing
+                    industry.<br>
+                    • Integrated Circuit Design Service launched for the semiconductor industry.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2012</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Acquires SolidWorks partnership.
+                    <br>
+                    • Celebrates a decade in business.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2013</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl">
+                    • Launches its fourth subsidiary - Agensi Pekerjaan
+                    AlpSoft Sdn Bhd.
+                    <br>
+                    • Opens own office In Meissa.
+                </p>
+            </div>
         </div>
     </section>
-    <section class="container mx-auto text-center">
+    <section class="text-center" style="background-color: #354183">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
             Contact Us
         </h2>
@@ -437,7 +499,7 @@
                 </div>
             </div>
         </div>
-        <div class="pt-9">
+        <div class="pt-9 pb-5">
             <p>© Copyrights 2024 AlpSoft Technologies</p>
         </div>
     </section>

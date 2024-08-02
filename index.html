@@ -11,6 +11,7 @@
     <meta name="description" content="AlpSoft Technologies" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -85,19 +86,6 @@
             }
         }
 
-        .gradient {
-            background: linear-gradient(90deg, #85bbee 0%, #0a66dd 100%);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -114,10 +102,6 @@
             animation: fadeInUp 0.5s ease-out forwards;
         }
 
-        .nav-link {
-            color: white;
-            transition: color 0.3s ease;
-        }
 
         .scrolled .nav-link {
             color: black;
@@ -148,101 +132,148 @@
             bottom: 20%;
             z-index: 100;
         }
+
+        .singaporeSkyline {
+            position: absolute;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
+        }
     </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient"
+<body class="leading-normal tracking-normal text-white"
     style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
     <!--Nav-->
     <app-navbar></app-navbar>
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <div>
+        <img src="images/SingaporeCitySkyline.jpg" class="singaporeSkyline" />
+    </div>
+    <div class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-48 overflow-hidden rounded-lg md:h-96" data-aos="flip-right">
-            <div class="logo">
-                <img src="https://www.alpsoft-tech.com/images/logo.png" alt="AlpSoft Logo" width="750px" height="750px">
-            </div>
+        <div class="relative h-96 overflow-hidden rounded-lg md:h-96 mb-96" data-aos="flip-right"
+            style="color: #354183;">
             <!-- Item 1 -->
-            <div class="hidden duration-700 ease-osin-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item style="display: inline;">
-                <h1 class="text-5xl font-bold leading-tight smartphone">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powerful and effect
+            <div class="hidden duration-700 ease-in-out absolute block -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Powerful and effect
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cooperation lasting for years
+                    cooperation lasting for years
                 </h1>
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Read
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
                     More</a>
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
                 data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplify your business
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Simplify your business
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are ready to help you
+                    We are ready to help you
                 </h1>
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Read
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
                     More</a>
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
                 data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solutions
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Delivering the highest level
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That you need
+                    of professional service
                 </h1>
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Read
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Powerful and effect
+                    <br>
+                    cooperation lasting for years
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Simplify your business
+                    <br>
+                    We are ready to help you
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                    More</a>
+            </div>
+            <!-- Item 6 -->
+            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
+                data-carousel-item>
+                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
+                    Delivering the highest level
+                    <br>
+                    of professional service
+                </h1>
+                <br>
+                <a href="/aboutUs.html"
+                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
                     More</a>
             </div>
         </div>
     </div>
-    <section class="smartphoneLogo">
-        <img src="https://www.alpsoft-tech.com/images/logo.png" alt="AlpSoft Logo" width="320px">
-    </section>
     <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                id="scrollingText" data-aos="flip-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="flip-up">
                 Our Services
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <div class="flex flex-wrap justify-center space-x-4">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/ITservices.png" alt="IT Services">
-                    <div class="px-6 py-4 flex-grow">
+            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/ITservices.png" alt="IT Services"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">IT Services</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• Data Backup/Data Recovery</li>
                             <li>• Software Solutions</li>
                             <li>• AWS (Amazon Web Services) Infrastructure</li>
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/eGovernmentTechnology.jpg" alt="E-Government Technology">
-                    <div class="px-6 py-4">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/eGovernmentTechnology.jpg" alt="E-Government Technology"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">E-Government Technology</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• Digital Government Services</li>
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/networkOffering.jpg" alt="Network Offerings">
-                    <div class="px-6 py-4">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/networkOffering.jpg" alt="Network Offerings"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">Network Offerings</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• Client-Server Architecture</li>
                             <li>• Cloud Networks</li>
                             <li>• AWS (Amazon Web Services)</li>
@@ -252,12 +283,14 @@
             </div>
             <br>
             <br>
-            <div class="flex flex-wrap justify-center space-x-4">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/fintechSolutions.jpg" alt="Fintech Solutions">
-                    <div class="px-6 py-4">
+            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/fintechSolutions.jpg" alt="Fintech Solutions"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">Fintech Solutions</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• API Library Interface</li>
                             <li>• E-Wallet and Payment System</li>
                             <li>• FX Platform and Cloud Adoption</li>
@@ -265,21 +298,25 @@
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/securitySolutions.jpg" alt="Security Solutions">
-                    <div class="px-6 py-4">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/securitySolutions.jpg" alt="Security Solutions"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">Security Solutions</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• Cyber Security Software</li>
                             <li>• Managed Detection and Response (MDR)</li>
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up">
-                    <img class="w-full h-96" src="images/technologyResource.jpg" alt="Technology Resource">
-                    <div class="px-6 py-4">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
+                    style="height: 600px; width: 300px;">
+                    <img class="w-full h-90" src="images/technologyResource.jpg" alt="Technology Resource"
+                        style="height: 260px; width: 300px;">
+                    <div class="px-6 py-4 flex-grow text-center">
                         <div class="font-bold text-2xl mb-2 text-black">Technology Resource</div>
-                        <ul class="text-gray-700 text-base">
+                        <ul class="text-gray-700 text-base space-y-4">
                             <li>• Sourcing Engineers and Technology Staff</li>
                         </ul>
                     </div>
@@ -289,20 +326,19 @@
     </section>
     <section class="bg-white py-8">
         <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                id="scrollingText2" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
                 Our Company Video
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left: 20%; padding-right: 20%;">
             <div class="col md-12" data-aos="zoom-in-up">
                 <div class="iframe-container video">
                     <iframe id="youtubeFrame" src="https://www.youtube.com/embed/UhsntWMThsQ" frameborder="1"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="border-radius: 25px; width: 70%; height: 100%;"></iframe>
+                        allowfullscreen style="border-radius: 25px; width: 100%; height: 100%;"></iframe>
                 </div>
             </div>
         </div>
@@ -310,14 +346,13 @@
         <br>
         <div class="bg-white py-8" data-aos="zoom-in-up">
             <div class="mx-auto px-2 pt-4 pb-12 text-gray-800">
-                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 gradient-text"
-                    id="scrollingText3">
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                     The AlpSoft Outcome
                 </h2>
                 <div class="w-full mb-4">
                     <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
-                <p class="heading_main text_align_center font-family text-xl font-bold custom-bold outcome">Our
+                <p class="text-xl outcome text-center" style="padding-left: 20%; padding-right: 20%;">Our
                     background in
                     working with our
                     customers in the enterprise and our capabilities in leveraging
@@ -335,17 +370,16 @@
     </section>
 
     <!-- Footer -->
-    <section class="container mx-auto text-center">
+    <section class="text-center" style="background-color: #354183">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
             Contact Us
         </h2>
         <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-6/6 opacity-25 my-0 py-0 rounded-t divider"></div>
         </div>
-            <div style="display: flex; align-items: center; justify-content: center;" class="address contactUsSpaceOut">
-                <div style="display: inline-block; text-align: center;"
-                    class="contactUsPadding contactUsCenter">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTA
+        <div style="display: flex; align-items: center; justify-content: center;" class="address contactUsSpaceOut">
+            <div style="display: inline-block; text-align: center;" class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTA
                     AALEwEAmpwYAAAEFUlEQVR4nO2aXYhVVRTHj6KiNupojjTUQ+DHKJhUJL4EMxnSB4UopaJPvgpKL6Jlwaj1YEhvFaVBPU
                     ihZJIEoT5IGA7jJ5mICqKI4BeOMzU6Wc4v1tz/wc293rPPnbN33Yn+cGC457//a62z915rf0yS/I9KAOOB5cA2oBO4Dtz
                     Tc12/fQ4sA8Yl9QagBfgCuEN+9ALbgen1EMBYYCvwp5zr11ffALQqwEf0tOi3d4Ej4qLe+hAY/W8FMR04JWfuAzuAqTW0
@@ -361,38 +395,37 @@
                     goB1YW0FkrjdMhz5IHe95lO8jxg2jf5KTzl+J4mc+RYcDPcmTrINp/pbZ743hY+6WPXZ/9Bcyrod3LCqK3lpuuqHC2uWfy
                     3GvoFOWS2qxJ6gWUMs8vvu2ww/803W8UyXhRoFOPe9pJtnmGVL92m7OSegSlXSFKy41VtszXxHkrqVdQWob/JEd3W1Zz3
                     g0HftS7H9x3dQlKy5cb5dcQzlb5apQrtRgAXtc8sPnyCvCa/rYU/WIylMCDtdgtHQEZ1idDDZSq/k4FUDFnhhQoFb4O/QNAuEvN5D+MvwHicecgMX2K0wAAAABJRU5ErkJggg=="
-                        style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Address</p>
-                    <div class="py-4">
-                        <a href="https://www.google.com/maps/dir//alpsoft+technologies+pte+ltd/@1.3575578,103.74247
+                    style="display: inline-block; vertical-align: middle;">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Address</p>
+                <div class="py-4">
+                    <a href="https://www.google.com/maps/dir//alpsoft+technologies+pte+ltd/@1.3575578,103.74247
                             53,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da1bb89f6faa9b:0xfdab0347eb69440c!2m2!1d103.795927!2d1.2762809"
-                            target="_blank" style="text-decoration:none" onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">
-                            <p>100D Pasir Panjang Road,</p>
-                            <p>#03-01, Meissa</p>
-                            <p>Singapore 118520</p>
-                        </a>
-                    </div>
+                        target="_blank" style="text-decoration:none" onmouseover="style='text-decoration:underline'"
+                        onmouseout="style='text-decoration:none'">
+                        <p>100D Pasir Panjang Road,</p>
+                        <p>#03-01, Meissa</p>
+                        <p>Singapore 118520</p>
+                    </a>
                 </div>
-                <div style="display: inline-block; text-align: center;"
-                    class="contactUsPadding contactUsCenter">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAAL
+            </div>
+            <div style="display: inline-block; text-align: center;" class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAAL
                     EwEAmpwYAAAA0klEQVR4nO3asQ3CMBhE4VRsALsQlqOBwHawQ2CNh4xASoHQHTgWEvfVlv84fqW77l8BC+AIXKnvAgxlRou
                     DHJjfvsVByl8r1sLa7eTjtsL6/nkz1T74zbA7ce0KOAMnYFl7/6/MPYgcxJQbEZG0TElLRNIyJS0RScuUtEQkLVPSEpG0TE
                     lLRNIyJS0RScuUtEQkLVPSEpG0TElLRNIyJS0RScuUtEQkLVPSEpG0Pn/C0c+w9+ax91h771fDyuudue1aPXMaJjdT01gO0
                     eSZ06+6AaSZfPTEQjDVAAAAAElFTkSuQmCC" style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Phone</p>
-                    <div class="py-4">
-                        <a class="links" href="tel:+65-69087618" style="text-decoration:none"
-                            onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">+65 6908 7618</a>
-                        <p>Monday - Friday</p>
-                        <p>9:00 AM - 6:00 PM</p>
-                    </div>
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Phone</p>
+                <div class="py-4">
+                    <a class="links" href="tel:+65-69087618" style="text-decoration:none"
+                        onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">+65
+                        6908 7618</a>
+                    <p>Monday - Friday</p>
+                    <p>9:00 AM - 6:00 PM</p>
                 </div>
-                <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
-                    class="contactUsPadding contactUsCenter">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEw
+            </div>
+            <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
+                class="contactUsPadding contactUsCenter">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEw
                     EAmpwYAAACJklEQVR4nO3YS6hNcRTH8b/3q9xEiJBuXQYMGEhJkVJSklJKMVB3amh0S3dkamggJWWiZGLAgJQUSSYMiAGRR97v
                     10f7Wrd2p3PuOffcfZxH+1t7ss9vrfX/9T/rv/faKZWUlJSUtAM9QtJrRlKXomeNoD91GeivZuQ9dqcuATvwppqRjD84hsmpQ8
                     EkHMHvqs2OodyPF9CXOgz0xdrEWoeqNnvFdj3AmtQhYBXuVbZBzVMLy3Erbn/E3rY6SCNr2oV3saa7+YNpzOMXM3Eq97c7gWlt
@@ -401,21 +434,21 @@
                     eoqN44xv3kgkWIDL9U6VOjmyU/F75LiGxU3kmJiRGuf8GcxuIC57Tp0s4jmlCCO5ZPvwKVLdwcoxtMtwM7RfcXCCtYsdrLAa9
                     yPda2yvotmCF6F5iLUF1C1+QsRcnI+Uv3A0Gwni1ftw9FLGRcwrqGZrRt1Y+HCub87FJe4NFznvaJWRXIGdeDuaHx+wpwV1Wv/
                     xAQMxEmTXQItq9OhXlNSlKI10GMod6TCUO9Jh6Nkd6XaSHiGVlJSUlKQ28BeJl84fDKCHpgAAAABJRU5ErkJggg=="
-                        style="display: inline-block; vertical-align: middle;">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;" class="pl-3">Email</p>
-                    <div class="py-4">
-                        <a class="links" href="mailto:info@alpsoft-tech.com" style="text-decoration:none"
-                            onmouseover="style='text-decoration:underline'"
-                            onmouseout="style='text-decoration:none'">info@alpsoft-tech.com</a>
-                    </div>
+                    style="display: inline-block; vertical-align: middle;">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;" class="pl-3">Email</p>
+                <div class="py-4">
+                    <a class="links" href="mailto:info@alpsoft-tech.com" style="text-decoration:none"
+                        onmouseover="style='text-decoration:underline'"
+                        onmouseout="style='text-decoration:none'">info@alpsoft-tech.com</a>
                 </div>
-                <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
-                    class="contactUsPadding contactUsCenter">
-                    <p style="display: inline-block; font-weight: bold; font-size:larger;">Social Media</p>
-                    <br>
-                    <div style="margin-top: 10px;">
-                        <a href="https://www.facebook.com/AlpSoftTechnologies/" target="_blank">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAAL
+            </div>
+            <div style="display: inline-block; text-align: center; margin-bottom: 50px;"
+                class="contactUsPadding contactUsCenter">
+                <p style="display: inline-block; font-weight: bold; font-size:larger;">Social Media</p>
+                <br>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.facebook.com/AlpSoftTechnologies/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAAL
                         EwEAmpwYAAADK0lEQVR4nO2Zz08TQRTHNzM0MQHixaMnI2jE4Mmr/4A/okej3r0oAn+AiYke9IYkpDNFDAkRqokHL4bEEzFe
                         lIqAJP5IDPvetrXQAhXSsrRjplYMboGdnd0th/0m79TN7Pcz8+bN7KthRIoUKZJUbNg8Qxj0UYZJwnCGcsxTjpv1yBOGH2u/
                         cbNXPmscCCVy7YRDP2XwmXIUSsFgXgIbg9m28I3fFS1yJinDZWXjDhBcIgzvyDHDMR/Hk4RjStv4f0EYThsJOBGodxqHS5R
@@ -428,10 +461,10 @@
                         ds2YDEIa3DK2PeobTzQIgHN4bSUENLfHF45TBavgA4ENbpS7Z7lNpbOkDgE0T5nnDT8l2n1sIPQCwCcNrRhCS7T43XTrPAAxW
                         fZ95hxh0yo6Z3wBEbtghs8MIRbI6xbFnt2u3GgDkaqVSu9p40WC2TZ7YhMOcKoC8qhB5wjblL6YGkpet2qpwnHhtlgqLRbuyb
                         leFDLNoVx6kVi15Ja61R4atU832GylSJONg6DekIcfGE7hs2QAAAABJRU5ErkJggg=="
-                                style="display: inline-block; vertical-align: middle;"></a>
-                        <a href="https://www.linkedin.com/company/alpsoft-enterprises/?originalSubdomain=sg"
-                            target="_blank">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
+                            style="display: inline-block; vertical-align: middle;"></a>
+                    <a href="https://www.linkedin.com/company/alpsoft-enterprises/?originalSubdomain=sg"
+                        target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
                         EAmpwYAAAByElEQVR4nO2ZP0/CQBjG22scXI2Tiauy+glc3MC4+iX8DA6G9IiDJsYBBhdNHJwcNRGIHY3xjoBCgkTEAUP8A63y
                         t7ymBVQEIq2mvSb3JM/UN5fnd+97N1wFgYuLi4tpSTJdQTKJI5lqCFNwxDLVRExjkkyW/xRexAQ7FhoPt4hJ0P7OuxwedS2FSM
                         AygDk2DIRHRhdkGrUOgInqdnDUs0wqNgAYCI6//G8AvkgazgsaaA0dlIIG8+G0twCUggbfFb/XvAWgNfQ+ALWuewtA8XoHfJG0C
@@ -439,13 +472,13 @@
                         CxCrAuPIf5dgE0Ntgzv/S4S2sHucheqcOrdtPPrMJsK4U+2omQgk4yVUG6jJPNTYBpreTA+ssHmQH6sq1FnsA7R/fe57aSo5d63
                         oH7K6FOADmHTDFRwjzQ0z5LYT4NWpRo24Otyx4+mkR07JlAON9noHgYFjE9MwygPFzwe3gqGsJX/ktA3S6QIJuhxcx2bAV/rMTI
                         RIw3uedPRNENcbG9s5zcXFxCU7pA5Jwntel+S2tAAAAAElFTkSuQmCC"
-                                style="display: inline-block; vertical-align: middle;"></a>
-                    </div>
+                            style="display: inline-block; vertical-align: middle;"></a>
                 </div>
             </div>
-            <div class="pt-9">
-                <p>© Copyrights 2024 AlpSoft Technologies</p>
-            </div>
+        </div>
+        <div class="pt-9 pb-5">
+            <p>© Copyrights 2024 AlpSoft Technologies</p>
+        </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./component.js"></script>
@@ -542,57 +575,28 @@
 
 
         //Carousel
-        const carouselElement = document.getElementById('carousel-example');
+        // const carouselElement = document.getElementById('carousel-example');
 
-        const items = [
-            {
-                position: 0,
-                el: document.getElementById('carousel-item-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-item-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-item-3'),
-            },
-        ];
+        // const items = [
+        //     {
+        //         position: 0,
+        //         el: document.getElementById('carousel-item-1'),
+        //     },
+        //     {
+        //         position: 1,
+        //         el: document.getElementById('carousel-item-2'),
+        //     },
+        //     {
+        //         position: 2,
+        //         el: document.getElementById('carousel-item-3'),
+        //     },
+        // ];
 
         // instance options object
-        const instanceOptions = {
-            id: 'carousel-example',
-            override: true
-        };
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText2');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const element = document.getElementById('scrollingText3');
-            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
-            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
-            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-        });
+        // const instanceOptions = {
+        //     id: 'carousel-example',
+        //     override: true
+        // };
         AOS.init({
             duration: 1200, // duration of the animation in milliseconds
             easing: 'ease-in-out', // easing function for the animation
