@@ -23,29 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
-            .smartphone {
-                font-size: large;
-                padding-top: 10px;
-            }
-
-            .readMoreButton {
-                height: 20px;
-                width: 20px;
-                font-size: 10px;
-                margin-inline-start: -11%;
-            }
-
             .responsiveDropdown {
                 color: black !important;
-            }
-
-            .logo {
-                display: none;
-            }
-
-            .smartphoneLogo {
-                padding-left: 30px;
-                padding-bottom: 10px;
             }
 
             .address {
@@ -53,11 +32,6 @@
                 flex-direction: column;
                 text-align: center;
                 padding-top: 10px;
-            }
-
-            .video {
-                width: 400px;
-                height: 10% !important;
             }
 
             .outcome {
@@ -76,13 +50,30 @@
                 text-align: end;
             }
 
+            .fontSize {
+                font-size: small;
+            }
+
+            .navLogo {
+                width: 200px;
+                height: 50px;
+            }
+
+            .fontSizeHeader {
+                font-size: xx-large !important;
+            }
+
+            .mobileHeight {
+                height: 24rem;
+            }
+
+            .mobileDescription {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
         }
 
         @media only screen and (min-width: 601px) {
-            .smartphoneLogo {
-                display: none;
-            }
-
             .contactUsSpaceOut {
                 gap: 10rem
             }
@@ -102,10 +93,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.5s ease-out forwards;
         }
 
         .nav-linkOurValues {
@@ -176,15 +163,9 @@
             white-space: nowrap;
         }
 
-        .copyright {
-            position: absolute;
-            bottom: -164%;
-            right: 40%;
-        }
-
         .box {
             background-color: #354183;
-            width: 150px;
+            width: 300px;
             height: 120px;
             margin: 0 auto;
             display: flex;
@@ -216,7 +197,8 @@
     </app-navbar2>
     <section class="bg-white py-8">
         <div class="container mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
+                data-aos="zoom-in-up">
                 Our History
             </h2>
             <div class="w-full mb-4">
@@ -224,177 +206,555 @@
             </div>
             <br>
             <br>
-            <div class="row mb-5" data-aos="zoom-in-up">
+            <div class="row mb-5" data-aos="zoom-in-up"
+                style="padding-left: 10%; padding-right: 10%;">
                 <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2002</h2>
+                    <h2 class="text-3xl font-bold text-center">2002 - 2004</h2>
                 </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • AlpSoft Enterprises founded.<br>
-                    • First year's income from resourcing service for Hewlett-Packard and PerkinElmer.
-                </p>
+                <div id="default-carousel" class="relative text-black text-center" data-carousel="static">
+                    <div class="relative h-72 overflow-hidden rounded-lg mobileHeight">
+                        <!-- Item 1 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2002
+                                <br>
+                            </h1>
+                            <div class="space-y-2 mobileDescription">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• AlpSoft Enterprises founded.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• First year's income from
+                                    resourcing service for Hewlett-Packard and PerkinElmer.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2003
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• First move towards IT: develops
+                                Windows Administration Monitor for Singapore Police
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Builds and delivers Linux RAID
+                                Storage Servers for Agilent.
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2004
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Opens office in The Comtech.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Develops mobile solution for
+                                Johnson & Johnson; field sales.
+                            </p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2002
+                                <br>
+                            </h1>
+                            <div class="space-y-2">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• AlpSoft Enterprises founded.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• First year's income from
+                                    resourcing service for Hewlett-Packard and PerkinElmer.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2003
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• First move towards IT: develops
+                                Windows Administration Monitor for Singapore Police
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Builds and delivers Linux RAID
+                                Storage Servers for Agilent.
+                            </p>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2004
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Opens office in The Comtech.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Develops mobile solution for
+                                Johnson & Johnson; field sales.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
                 <div class="gradient-container">
                     <div class="gradient w-1 h-44">
                     </div>
                 </div>
             </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 10%; padding-right: 10%;">
                 <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2003</h2>
+                    <h2 class="text-3xl font-bold text-center">2005 - 2007</h2>
                 </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • First move towards IT: develops Windows Administration Monitor for Singapore Police.<br>
-                    • Builds and delivers Linux RAID Storage Servers for Agilent.
-                </p>
+                <div id="default-carousel" class="relative text-black text-center" data-carousel="static">
+                    <div class="relative h-72 overflow-hidden rounded-lg mobileHeight">
+                        <!-- Item 1 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2005
+                                <br>
+                            </h1>
+                            <div class="space-y-2 mobileDescription">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Launches second company -
+                                    Alpsoft Technologies Pte.
+                                    Ltd.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Provides IT support service
+                                    for Faith Community Baptist Church, a mega church in
+                                    Singapore.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2006
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• First move towards international
+                                business: provides
+                                IT solutions overseas.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• For India Hyderabad City,
+                                Intelligent Car Parking Solution using Radio Frequency
+                                Identification (RFID).
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• For Malaysia Sunningdale Tech,
+                                Video Security System.
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2007
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Develops Open Geographical
+                                Information Xchange
+                                (OGIX) for SP Services's Wireless Workforce Management System.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Reaches fifth year in business and
+                                grows 75% in turnover year-on-year.
+                            </p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2005
+                                <br>
+                            </h1>
+                            <div class="space-y-2">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Launches second company -
+                                    Alpsoft Technologies Pte.
+                                    Ltd.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Provides IT support service
+                                    for Faith Community Baptist Church, a mega church in
+                                    Singapore.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2006
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• First move towards international
+                                business: provides
+                                IT solutions overseas.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• For India Hyderabad City,
+                                Intelligent Car Parking Solution using Radio Frequency
+                                Identification (RFID).
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• For Malaysia Sunningdale Tech,
+                                Video Security System.
+                            </p>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2007
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Develops Open Geographical
+                                Information Xchange
+                                (OGIX) for SP Services's Wireless Workforce Management System.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Reaches fifth year in business and
+                                grows 75% in turnover year-on-year.
+                            </p>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30">
+                                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+                                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
                 <div class="gradient-container">
                     <div class="gradient w-1 h-44">
                     </div>
                 </div>
             </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 10%; padding-right: 10%;">
                 <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2004</h2>
+                    <h2 class="text-3xl font-bold text-center">2008 - 2010</h2>
                 </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Opens office in The Comtech.<br>
-                    • Develops mobile solution for Johnson & Johnson; field sales.
-                </p>
+                <div id="default-carousel" class="relative text-black text-center" data-carousel="static">
+                    <div class="relative h-72 overflow-hidden rounded-lg mobileHeight">
+                        <!-- Item 1 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2008
+                                <br>
+                            </h1>
+                            <div class="space-y-2 mobileDescription">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Launches third company - ZON
+                                    Systems Pte. Ltd.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Deploys OGIX For Land
+                                    Transport Authority Remote Bus Monitoring.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2009
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Moves Into Approved Vendor List of
+                                Motorola for
+                                resourcing service.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Finalist of Singtel I.Challenge08
+                                with solutions for Mobile Patient Health Records and
+                                Remote Vehicle Diagnostics.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Provides IT solutions for the
+                                first time to Indonesia: Formotus Mobile Solution For Kraft
+                                field sales.
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2010
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Wins Fingerprint Verification
+                                Project by Building &
+                                Construction Authority for worker testing centers In 7 countries.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Staff strength over 50.
+                            </p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2008
+                                <br>
+                            </h1>
+                            <div class="space-y-2">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Launches third company - ZON
+                                    Systems Pte. Ltd.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Deploys OGIX For Land
+                                    Transport Authority Remote Bus Monitoring.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2009
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Moves Into Approved Vendor List of
+                                Motorola for
+                                resourcing service.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Finalist of Singtel I.Challenge08
+                                with solutions for Mobile Patient Health Records and
+                                Remote Vehicle Diagnostics.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Provides IT solutions for the
+                                first time to Indonesia: Formotus Mobile Solution For Kraft
+                                field sales.
+                            </p>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2010
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Wins Fingerprint Verification
+                                Project by Building &
+                                Construction Authority for worker testing centers In 7 countries.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Staff strength over 50.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
                 <div class="gradient-container">
                     <div class="gradient w-1 h-44">
                     </div>
                 </div>
             </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 10%; padding-right: 10%;">
                 <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2005</h2>
+                    <h2 class="text-3xl font-bold text-center">2011 - 2013</h2>
                 </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Launches second company - Alpsoft Technologies Pte.
-                    Ltd.<br>
-                    • Provides IT support service for Faith Community Baptist Church, a mega church in
-                    Singapore.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
+                <div id="default-carousel" class="relative text-black text-center" data-carousel="static">
+                    <div class="relative h-72 overflow-hidden rounded-lg mobileHeight">
+                        <!-- Item 1 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2011
+                                <br>
+                            </h1>
+                            <div class="space-y-2 mobileDescription">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Managed IT Service launched
+                                    for the manufacturing
+                                    industry.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Integrated Circuit Design
+                                    Service launched for the semiconductor industry.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2012
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Acquires SolidWorks partnership.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Celebrates a decade in business.
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2013
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Launches its fourth subsidiary -
+                                Agensi Pekerjaan
+                                AlpSoft Sdn Bhd.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Opens own office In Meissa.
+                            </p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2011
+                                <br>
+                            </h1>
+                            <div class="space-y-2">
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Managed IT Service launched
+                                    for the manufacturing
+                                    industry.
+                                </p>
+                                <p class="text-black pt-5 text-center text-xl fontSize">• Integrated Circuit Design
+                                    Service launched for the semiconductor industry.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2012
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Acquires SolidWorks partnership.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Celebrates a decade in business.
+                            </p>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="ease-in-out absolute block w-full hidden duration-700 mobileDescription" data-carousel-item>
+                            <h1 class="my-4 ml-4 text-3xl font-bold leading-tight">
+                                2013
+                                <br>
+                            </h1>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Launches its fourth subsidiary -
+                                Agensi Pekerjaan
+                                AlpSoft Sdn Bhd.
+                            </p>
+                            <p class="text-black pt-5 text-center text-xl fontSize">• Opens own office In Meissa.
+                            </p>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30">
+                                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+                                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2006</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • First move towards international business: provides
-                    IT solutions overseas.<br>
-                    • For India Hyderabad City, Intelligent Car Parking Solution using Radio Frequency
-                    Identification (RFID).<br>
-                    • For Malaysia Sunningdale Tech, Video Security System.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2007</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Develops Open Geographical Information Xchange
-                    (OGIX) for SP Services's Wireless Workforce Management System.<br>
-                    • Reaches fifth year in business and grows 75% in turnover year-on-year.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2008</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Launches third company - ZON Systems Pte. Ltd.<br>
-                    • Deploys OGIX For Land Transport Authority Remote Bus Monitoring.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2009</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Moves Into Approved Vendor List of Motorola for
-                    resourcing service.<br>
-                    • Finalist of Singtel I.Challenge08 with solutions for Mobile Patient Health Records and
-                    Remote Vehicle Diagnostics.<br>
-                    • Provides IT solutions for the first time to Indonesia: Formotus Mobile Solution For Kraft
-                    field sales.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2010</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Wins Fingerprint Verification Project by Building &
-                    Construction Authority for worker testing centers In 7 countries.<br>
-                    • Staff strength over 50.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2011</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Managed IT Service launched for the manufacturing
-                    industry.<br>
-                    • Integrated Circuit Design Service launched for the semiconductor industry.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2012</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Acquires SolidWorks partnership.
-                    <br>
-                    • Celebrates a decade in business.
-                </p>
-                <div class="gradient-container">
-                    <div class="gradient w-1 h-44">
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" data-aos="zoom-in-up">
-                <div class="box">
-                    <h2 class="text-3xl font-bold text-center">2013</h2>
-                </div>
-                <p class="text-black pt-5 text-center text-xl">
-                    • Launches its fourth subsidiary - Agensi Pekerjaan
-                    AlpSoft Sdn Bhd.
-                    <br>
-                    • Opens own office In Meissa.
-                </p>
             </div>
         </div>
     </section>
     <section class="text-center" style="background-color: #354183">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 fontSizeHeader">
             Contact Us
         </h2>
         <div class="w-full mb-4">
@@ -567,33 +927,6 @@
         });
     </script>
     <script>
-        /*Toggle dropdown list*/
-        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-        //Carousel
-        const carouselElement = document.getElementById('carousel-example');
-
-        const items = [
-            {
-                position: 0,
-                el: document.getElementById('carousel-item-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-item-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-item-3'),
-            },
-        ];
-
-        // instance options object
-        const instanceOptions = {
-            id: 'carousel-example',
-            override: true
-        };
-
         var navMenuDiv = document.getElementById("nav-content");
         var navMenu = document.getElementById("nav-toggle");
 

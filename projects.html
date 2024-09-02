@@ -23,29 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
-            .smartphone {
-                font-size: large;
-                padding-top: 10px;
-            }
-
-            .readMoreButton {
-                height: 20px;
-                width: 20px;
-                font-size: 10px;
-                margin-inline-start: -11%;
-            }
-
             .responsiveDropdown {
                 color: black !important;
-            }
-
-            .logo {
-                display: none;
-            }
-
-            .smartphoneLogo {
-                padding-left: 30px;
-                padding-bottom: 10px;
             }
 
             .address {
@@ -53,15 +32,6 @@
                 flex-direction: column;
                 text-align: center;
                 padding-top: 10px;
-            }
-
-            .video {
-                width: 400px;
-                height: 10% !important;
-            }
-
-            .outcome {
-                text-align: center;
             }
 
             .divider {
@@ -76,60 +46,25 @@
                 text-align: end;
             }
 
-            .enterpriseSingapore {
-                margin-left: 0%;
-                height: 200px;
+            .navLogo {
                 width: 200px;
-                padding-top: 150%;
+                height: 50px;
             }
 
-            .CAG {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 240%;
+            .fontSize {
+                font-size: smaller;
             }
 
-            .BCA {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 240%;
+            .cardMobileView {
+                padding-left: 11%;
             }
 
-            .JTC {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 200%;
-            }
-
-            .PNS {
-                margin-left: 0%;
-                height: 200px;
-                width: 200px;
-                padding-top: 170%;
-                padding-bottom: 90%;
-            }
-
-            .descriptionMargin {
-                margin-left: 10%;
-            }
-
-            .BCAdescriptionMargin {
-                margin-left: 2%;
-            }
-
-            .JTCdescriptionMargin {
-                margin-left: 2%;
+            .fontSizeHeader {
+                font-size: xx-large !important;
             }
         }
 
         @media only screen and (min-width: 601px) {
-            .smartphoneLogo {
-                display: none;
-            }
-
             .contactUsSpaceOut {
                 gap: 10rem
             }
@@ -137,15 +72,6 @@
 
         .gradient {
             background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
         }
 
         @keyframes fadeInUp {
@@ -158,10 +84,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.5s ease-out forwards;
         }
 
         .nav-linkOurValues {
@@ -217,25 +139,8 @@
             }
         }
 
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-            transition: transform 2s ease-in-out;
-        }
-
         .nowrap-text {
             white-space: nowrap;
-        }
-
-        .copyright {
-            position: absolute;
-            bottom: -164%;
-            right: 40%;
         }
 
         .flip-card {
@@ -298,14 +203,15 @@
     </app-navbar2>
     <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
+                data-aos="zoom-in-up">
                 IT Projects
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
     </section>
-    <div class="flex space-x-10 mb-10" ; style="justify-content: center; padding-left: 20%; padding-right: 20%;">
+    <div class="flex flex-col md:space-x-10 mb-10 md:flex-row justify-center cardMobileView">
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -358,7 +264,7 @@
             </div>
         </div>
     </div>
-    <div class="flex space-x-10" ; style="justify-content: center; padding-left: 20%; padding-right: 20%;">
+    <div class="flex flex-col md:space-x-10 mb-10 md:flex-row justify-center cardMobileView">
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -380,7 +286,15 @@
                     <img src="images/NEC.png" style="padding: 10%;">
                 </div>
                 <div class="flip-card-back" style="color: black; font-size: 90%; padding-left: 5%; padding-right: 5%;">
-                    <p>To be added</p>
+                    <br>
+                    <p>• Identified and resolved issues in the existing database (DB) and web servers, ensuring smooth
+                        and efficient operations.</p>
+                    <br>
+                    <p>• Configured and diagnosed additional issues, providing comprehensive solutions to improve
+                        overall system functionality.</p>
+                    <br>
+                    <p>• Ensured that all systems are running optimally after the interventions, leading to improved
+                        reliability and performance of the Workspace Booking System (WSBS) platform.</p>
                 </div>
             </div>
         </div>
@@ -404,17 +318,20 @@
     </div>
     <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
+                data-aos="zoom-in-up">
                 HR Outsourcing
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <P class="px-5 py-8 w-full my-2 text-xl leading-tight text-center text-gray-800" data-aos="zoom-in-up"
-                style="padding-left: 20%; padding-right: 20%;">Experience/Positions we have filled Throughout the Years
+            <P class="px-5 py-8 w-full my-2 text-xl leading-tight text-center text-gray-800 fontSize"
+                data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">Experience/Positions we have filled
+                Throughout the Years
             </P>
     </section>
-    <div class="flex space-x-10 mb-10" ; style="justify-content: center; padding-left: 20%; padding-right: 20%;">
+    <div class="flex flex-col md:space-x-10 mb-10 md:flex-row justify-center cardMobileView"
+        style="justify-content: center;">
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -471,7 +388,8 @@
             </div>
         </div>
     </div>
-    <div class="flex space-x-10 mb-10" ; style="justify-content: center; padding-left: 20%; padding-right: 20%;">
+    <div class="flex flex-col md:space-x-10 mb-10 md:flex-row justify-center cardMobileView"
+        style="justify-content: center;">
         <div class="flip-card" data-aos="zoom-in-up">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -523,7 +441,7 @@
         </div>
     </div>
     <section class="text-center" style="background-color: #354183">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 fontSizeHeader">
             Contact Us
         </h2>
         <div class="w-full mb-4">
@@ -696,33 +614,6 @@
         });
     </script>
     <script>
-        /*Toggle dropdown list*/
-        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-        //Carousel
-        const carouselElement = document.getElementById('carousel-example');
-
-        const items = [
-            {
-                position: 0,
-                el: document.getElementById('carousel-item-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-item-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-item-3'),
-            },
-        ];
-
-        // instance options object
-        const instanceOptions = {
-            id: 'carousel-example',
-            override: true
-        };
-
         var navMenuDiv = document.getElementById("nav-content");
         var navMenu = document.getElementById("nav-toggle");
 

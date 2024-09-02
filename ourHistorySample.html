@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" type="image/x-icon"
         href="https://scontent-xsp1-2.xx.fbcdn.net/v/t39.30808-6/301749980_611367303697408_1352892433533406887_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gsxS9mTzgvAQ7kNvgEny_za&_nc_ht=scontent-xsp1-2.xx&oh=00_AYCRbICRHbm4Tr06wM_sWXUOEq1JFAYV6DSCyCApbSX-IA&oe=6676C0D7">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
@@ -26,15 +27,15 @@
                 color: black !important;
             }
 
-            .logo {
-                display: none;
-            }
-
             .address {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 padding-top: 10px;
+            }
+
+            .outcome {
+                text-align: center;
             }
 
             .divider {
@@ -49,28 +50,18 @@
                 text-align: end;
             }
 
+            .fontSize {
+                font-size: small;
+            }
+
             .navLogo {
                 width: 200px;
                 height: 50px;
             }
 
-            .fontSize {
-                font-size: smaller;
-            }
-
             .fontSizeHeader {
                 font-size: xx-large !important;
             }
-
-            .custom-grid {
-                grid-template-columns: 1fr;
-                /* Set to one column */
-            }
-
-            .widthMobileView {
-                width: 350px;
-            }
-
         }
 
         @media only screen and (min-width: 601px) {
@@ -151,6 +142,31 @@
         .nowrap-text {
             white-space: nowrap;
         }
+
+        .box {
+            background-color: #354183;
+            width: 150px;
+            height: 120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .gradient-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* Or fixed if you want it to be fixed */
+        }
     </style>
 </head>
 
@@ -160,88 +176,182 @@
     <app-navbar2>
     </app-navbar2>
     <section class="bg-white py-8">
-        <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
-                data-aos="zoom-in-up">
-                Who Are We?
+        <div class="container mx-auto m-20">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader" data-aos="zoom-in-up">
+                Our History
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <p class="px-5 py-8 w-full my-2 text-xl leading-tight text-center text-gray-800 fontSize"
-                data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">AlpSoft has been
-                incorporated since 2002. We are headquartered in Singapore with regional business. Over the years, we
-                have accumulated extensive experience and vast array of knowledge in providing technology services such
-                as end-to-end Engineering and IT solutions.
-            </p>
             <br>
             <br>
-            <br>
-            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
-                data-aos="zoom-in-up">
-                Overview
-            </h2>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2002</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • AlpSoft Enterprises founded.<br>
+                    • First year's income from resourcing service for Hewlett-Packard and PerkinElmer.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
             </div>
-            <p class="px-5 py-8 w-full my-2 text-xl leading-tight text-center text-gray-800 fontSize"
-                data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">AlpSoft has
-                established a strong foothold in the Infocomm Technology industry in the local and Asian regions. We are
-                highly experienced in helping organisations of all sizes to enhance their business competitiveness in
-                today’s ever-changing economy. AlpSoft believes in a culture of integrity, innovation, collaboration and
-                customer-centricity. Currently, we have more than 160 employees who demonstrate their professionalism
-                through upholding of these values. We take pride in delivering our best and exceeding customers’
-                expectations.
-            </p>
-            <br>
-            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
-                data-aos="zoom-in-up">
-                Gallery
-            </h2>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2003</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • First move towards IT: develops Windows Administration Monitor for Singapore Police.<br>
+                    • Builds and delivers Linux RAID Storage Servers for Agilent.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
             </div>
-            <div data-aos="fade-up" class="text-center grid grid-cols-2 place-items-center custom-grid mt-20">
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fposts%2Fpfbid02WHC8v2MaUXftyXFwwGpvHRfMRHZfuZwgh4B6vfnsBB2njMgbkiEPMYkn5fLJ5tZzl&show_text=true&width=500"
-                    width="500" height="831" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fposts%2Fpfbid02iMzdon8TfKsW5jvyim62RgmXssAi4RZKAXiTN8vnQejtcLMVKbr1PL4hffWBHgE9l&show_text=true&width=500"
-                    width="500" height="710" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2004</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Opens office in The Comtech.<br>
+                    • Develops mobile solution for Johnson & Johnson; field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
             </div>
-            <div data-aos="fade-up" class="text-center grid grid-cols-2 place-items-center custom-grid mt-20">
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fposts%2Fpfbid0TdRgq8EAbxQVW4MPwqzh1tSe7fWNKN5d2x3fZkuWDwvJ8ffBUdJb7tsnBN2hDQkgl&show_text=true&width=500"
-                    width="500" height="710" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fposts%2Fpfbid0h97oqUCtajoWKtyrxM9KhFEoacwhnHZhav3HuHMoMLT6hR1B6kNCgYU4uuJdMiuCl&show_text=true&width=500"
-                    width="500" height="556" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2005</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches second company - Alpsoft Technologies Pte.
+                    Ltd.<br>
+                    • Provides IT support service for Faith Community Baptist Church, a mega church in
+                    Singapore.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
             </div>
-            <div data-aos="fade-up" class="text-center grid grid-cols-2 place-items-center custom-grid mt-20">
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fposts%2Fpfbid02HpmX6cRX9mzXT9dQB5SUEkMsiak3i7hSVc2Dywb3Y4B8JwE2VGqnRWbCWzRommQpl&show_text=true&width=500"
-                    width="500" height="588" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlpSoftTechnologies%2Fphotos%2Fa.616448455050358%2F5596363520392135%2F%3Ftype%3D3&show_text=true&width=500"
-                    width="500" height="499" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true" class="widthMobileView"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2006</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • First move towards international business: provides
+                    IT solutions overseas.<br>
+                    • For India Hyderabad City, Intelligent Car Parking Solution using Radio Frequency
+                    Identification (RFID).<br>
+                    • For Malaysia Sunningdale Tech, Video Security System.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
             </div>
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2007</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Develops Open Geographical Information Xchange
+                    (OGIX) for SP Services's Wireless Workforce Management System.<br>
+                    • Reaches fifth year in business and grows 75% in turnover year-on-year.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2008</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches third company - ZON Systems Pte. Ltd.<br>
+                    • Deploys OGIX For Land Transport Authority Remote Bus Monitoring.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2009</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Moves Into Approved Vendor List of Motorola for
+                    resourcing service.<br>
+                    • Finalist of Singtel I.Challenge08 with solutions for Mobile Patient Health Records and
+                    Remote Vehicle Diagnostics.<br>
+                    • Provides IT solutions for the first time to Indonesia: Formotus Mobile Solution For Kraft
+                    field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2010</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Wins Fingerprint Verification Project by Building &
+                    Construction Authority for worker testing centers In 7 countries.<br>
+                    • Staff strength over 50.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2011</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Managed IT Service launched for the manufacturing
+                    industry.<br>
+                    • Integrated Circuit Design Service launched for the semiconductor industry.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2012</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Acquires SolidWorks partnership.
+                    <br>
+                    • Celebrates a decade in business.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2013</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches its fourth subsidiary - Agensi Pekerjaan
+                    AlpSoft Sdn Bhd.
+                    <br>
+                    • Opens own office In Meissa.
+                </p>
+            </div>
         </div>
     </section>
     <section class="text-center" style="background-color: #354183">
@@ -457,6 +567,13 @@
             } else {
                 header.classList.remove('scrolled');
             }
+        });
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const element = document.getElementById('scrollingText');
+            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
+            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
+            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
         });
         AOS.init({
             duration: 1200, // duration of the animation in milliseconds

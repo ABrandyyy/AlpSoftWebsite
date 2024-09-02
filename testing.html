@@ -16,35 +16,15 @@
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" type="image/x-icon"
         href="https://scontent-xsp1-2.xx.fbcdn.net/v/t39.30808-6/301749980_611367303697408_1352892433533406887_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gsxS9mTzgvAQ7kNvgEny_za&_nc_ht=scontent-xsp1-2.xx&oh=00_AYCRbICRHbm4Tr06wM_sWXUOEq1JFAYV6DSCyCApbSX-IA&oe=6676C0D7">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
-            .smartphone {
-                font-size: large;
-                padding-top: 10px;
-            }
-
-            .readMoreButton {
-                height: 20px;
-                width: 20px;
-                font-size: 10px;
-                margin-inline-start: -16%;
-            }
-
             .responsiveDropdown {
                 color: black !important;
-            }
-
-            .logo {
-                display: none;
-            }
-
-            .smartphoneLogo {
-                padding-left: 30px;
-                padding-bottom: 10px;
             }
 
             .address {
@@ -52,11 +32,6 @@
                 flex-direction: column;
                 text-align: center;
                 padding-top: 10px;
-            }
-
-            .video {
-                width: 400px;
-                height: 10% !important;
             }
 
             .outcome {
@@ -74,16 +49,29 @@
             .contactUsCenter {
                 text-align: end;
             }
+
+            .fontSize {
+                font-size: small;
+            }
+
+            .navLogo {
+                width: 200px;
+                height: 50px;
+            }
+
+            .fontSizeHeader {
+                font-size: xx-large !important;
+            }
         }
 
         @media only screen and (min-width: 601px) {
-            .smartphoneLogo {
-                display: none;
-            }
-
             .contactUsSpaceOut {
                 gap: 10rem
             }
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
         }
 
         @keyframes fadeInUp {
@@ -98,10 +86,10 @@
             }
         }
 
-        .fade-in-up {
-            animation: fadeInUp 0.5s ease-out forwards;
+        .nav-linkOurValues {
+            color: rgb(0, 0, 0);
+            transition: color 0.3s ease;
         }
-
 
         .scrolled .nav-link {
             color: black;
@@ -120,258 +108,244 @@
             /* Change this value to adjust the thickness */
         }
 
-        .copyright {
-            position: absolute;
-            bottom: -348%;
-            right: 40%;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .logo {
-            position: absolute;
-            right: -5%;
-            bottom: 20%;
-            z-index: 100;
+        .animated-element {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            /* 2s for the duration of the animation */
         }
 
-        .singaporeSkyline {
-            position: absolute;
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
-        .gradient {
-            background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .nowrap-text {
+            white-space: nowrap;
+        }
+
+        .box {
+            background-color: #354183;
+            width: 300px;
+            height: 120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .gradient-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* Or fixed if you want it to be fixed */
         }
     </style>
 </head>
 
 <body class="leading-normal tracking-normal text-white"
     style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
-    <!--Nav-->
-    <app-navbar></app-navbar>
-    <div>
-        <img src="images/SingaporeCitySkyline.jpg" class="singaporeSkyline" />
-    </div>
-    <div class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-96 overflow-hidden rounded-lg md:h-96 mb-96" data-aos="flip-right"
-            style="color: #354183;">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out absolute block -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Powerful and effect
-                    <br>
-                    cooperation lasting for years
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Simplify your business
-                    <br>
-                    We are ready to help you
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Delivering the highest level
-                    <br>
-                    of professional service
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Powerful and effect
-                    <br>
-                    cooperation lasting for years
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Simplify your business
-                    <br>
-                    We are ready to help you
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 6 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Delivering the highest level
-                    <br>
-                    of professional service
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-        </div>
-    </div>
+    <!-- Navbar -->
+    <app-navbar2>
+    </app-navbar2>
     <section class="bg-white py-8">
-        <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="flip-up">
-                Our Services
+        <div class="container mx-auto m-20">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader" data-aos="zoom-in-up">
+                Our History
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/ITservices.png" alt="IT Services"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">IT Services</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• Data Backup/Data Recovery</li>
-                            <li>• Software Solutions</li>
-                            <li>• AWS (Amazon Web Services) Infrastructure</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/eGovernmentTechnology.jpg" alt="E-Government Technology"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">E-Government Technology</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• Digital Government Services</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/networkOffering.jpg" alt="Network Offerings"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">Network Offerings</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• Client-Server Architecture</li>
-                            <li>• Cloud Networks</li>
-                            <li>• AWS (Amazon Web Services)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <br>
             <br>
-            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/fintechSolutions.jpg" alt="Fintech Solutions"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">Fintech Solutions</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• API Library Interface</li>
-                            <li>• E-Wallet and Payment System</li>
-                            <li>• FX Platform and Cloud Adoption</li>
-                            <li>• Crypto Payment Gateway</li>
-                        </ul>
-                    </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2002 - 2004</h2>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/securitySolutions.jpg" alt="Security Solutions"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">Security Solutions</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• Cyber Security Software</li>
-                            <li>• Managed Detection and Response (MDR)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
-                    <img class="w-full h-90" src="images/technologyResource.jpg" alt="Technology Resource"
-                        style="height: 260px; width: 300px;">
-                    <div class="px-6 py-4 flex-grow text-center">
-                        <div class="font-bold text-2xl mb-2 text-black">Technology Resource</div>
-                        <ul class="text-gray-700 text-base space-y-4">
-                            <li>• Sourcing Engineers and Technology Staff</li>
-                        </ul>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • AlpSoft Enterprises founded.
+                    • First year's income from resourcing service for Hewlett-Packard and PerkinElmer.
+                    • First move towards IT: develops Windows Administration Monitor for Singapore Police.
+                    • Builds and delivers Linux RAID Storage Servers for Agilent.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="bg-white py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
-                Our Company Video
-            </h2>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-        </div>
-        <div class="row" style="padding-left: 20%; padding-right: 20%;">
-            <div class="col md-12" data-aos="zoom-in-up">
-                <div class="iframe-container video">
-                    <iframe id="youtubeFrame" src="https://www.youtube.com/embed/UhsntWMThsQ" frameborder="1"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="border-radius: 25px; width: 100%; height: 100%;"></iframe>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="bg-white py-8" data-aos="zoom-in-up">
-            <div class="mx-auto px-2 pt-4 pb-12 text-gray-800">
-                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                    The AlpSoft Outcome
-                </h2>
-                <div class="w-full mb-4">
-                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                </div>
-                <p class="text-xl outcome text-center" style="padding-left: 20%; padding-right: 20%;">Our
-                    background in
-                    working with our
-                    customers in the enterprise and our capabilities in leveraging
-                    technology have allowed us to work on many cutting edge engagements where
-                    technology and domain competencies form an integral part
-                    in conceptualizing a workable solution. By working with us, we bring to the
-                    table a culture of success by asking the right questions
-                    and providing our approach and recommendations that is unique. We make sure
-                    those decisions get translated quickly into action leaving
-                    organizations stronger than when we arrive.</p>
-            </div>
-        </div>
-    </section>
-    </div>
-    </section>
 
-    <!-- Footer -->
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2004</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Opens office in The Comtech.<br>
+                    • Develops mobile solution for Johnson & Johnson; field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2005</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches second company - Alpsoft Technologies Pte.
+                    Ltd.<br>
+                    • Provides IT support service for Faith Community Baptist Church, a mega church in
+                    Singapore.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2006</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • First move towards international business: provides
+                    IT solutions overseas.<br>
+                    • For India Hyderabad City, Intelligent Car Parking Solution using Radio Frequency
+                    Identification (RFID).<br>
+                    • For Malaysia Sunningdale Tech, Video Security System.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2007</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Develops Open Geographical Information Xchange
+                    (OGIX) for SP Services's Wireless Workforce Management System.<br>
+                    • Reaches fifth year in business and grows 75% in turnover year-on-year.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2008</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches third company - ZON Systems Pte. Ltd.<br>
+                    • Deploys OGIX For Land Transport Authority Remote Bus Monitoring.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2009</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Moves Into Approved Vendor List of Motorola for
+                    resourcing service.<br>
+                    • Finalist of Singtel I.Challenge08 with solutions for Mobile Patient Health Records and
+                    Remote Vehicle Diagnostics.<br>
+                    • Provides IT solutions for the first time to Indonesia: Formotus Mobile Solution For Kraft
+                    field sales.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2010</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Wins Fingerprint Verification Project by Building &
+                    Construction Authority for worker testing centers In 7 countries.<br>
+                    • Staff strength over 50.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2011</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Managed IT Service launched for the manufacturing
+                    industry.<br>
+                    • Integrated Circuit Design Service launched for the semiconductor industry.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2012</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Acquires SolidWorks partnership.
+                    <br>
+                    • Celebrates a decade in business.
+                </p>
+                <div class="gradient-container">
+                    <div class="gradient w-1 h-44">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
+                <div class="box">
+                    <h2 class="text-3xl font-bold text-center">2013</h2>
+                </div>
+                <p class="text-black pt-5 text-center text-xl fontSize">
+                    • Launches its fourth subsidiary - Agensi Pekerjaan
+                    AlpSoft Sdn Bhd.
+                    <br>
+                    • Opens own office In Meissa.
+                </p>
+            </div>
+        </div>
+    </section>
     <section class="text-center" style="background-color: #354183">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 fontSizeHeader">
             Contact Us
         </h2>
         <div class="w-full mb-4">
@@ -480,10 +454,12 @@
             <p>© Copyrights 2024 AlpSoft Technologies</p>
         </div>
     </section>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="./component.js"></script>
+    <script src="component.js"></script>
     <script>
-        // Navbar
         var scrollpos = window.scrollY;
         var header = document.getElementById("header");
         var navcontent = document.getElementById("nav-content");
@@ -540,6 +516,8 @@
                 dropdownMenu.classList.add('hidden');
             }
         });
+    </script>
+    <script>
         var navMenuDiv = document.getElementById("nav-content");
         var navMenu = document.getElementById("nav-toggle");
 
@@ -572,31 +550,21 @@
             }
             return false;
         }
-
-
-        //Carousel
-        // const carouselElement = document.getElementById('carousel-example');
-
-        // const items = [
-        //     {
-        //         position: 0,
-        //         el: document.getElementById('carousel-item-1'),
-        //     },
-        //     {
-        //         position: 1,
-        //         el: document.getElementById('carousel-item-2'),
-        //     },
-        //     {
-        //         position: 2,
-        //         el: document.getElementById('carousel-item-3'),
-        //     },
-        // ];
-
-        // instance options object
-        // const instanceOptions = {
-        //     id: 'carousel-example',
-        //     override: true
-        // };
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const element = document.getElementById('scrollingText');
+            const color1 = `rgb(${(scrollPosition % 255)}, 100, 200)`;
+            const color2 = `rgb(200, ${(scrollPosition % 255)}, 100)`;
+            element.style.backgroundImage = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
+        });
         AOS.init({
             duration: 1200, // duration of the animation in milliseconds
             easing: 'ease-in-out', // easing function for the animation

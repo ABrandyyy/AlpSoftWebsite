@@ -27,24 +27,12 @@
                 padding-top: 10px;
             }
 
-            .readMoreButton {
-                height: 20px;
-                width: 20px;
-                font-size: 10px;
-                margin-inline-start: -16%;
+            .carouselBanner {
+                margin-inline-start: -11%;
             }
 
             .responsiveDropdown {
                 color: black !important;
-            }
-
-            .logo {
-                display: none;
-            }
-
-            .smartphoneLogo {
-                padding-left: 30px;
-                padding-bottom: 10px;
             }
 
             .address {
@@ -74,13 +62,37 @@
             .contactUsCenter {
                 text-align: end;
             }
+
+            .navLogo {
+                width: 200px;
+                height: 50px;
+            }
+
+            .banner {
+                width: 600px;
+                height: 800px;
+            }
+
+            .fontSize {
+                font-size: smaller;
+            }
+
+            .fontSizeHeader {
+                font-size: xx-large;
+            }
+
+            .imageMobileView {
+                height: 50vh !important;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .testing {
+                height: 50vh !important;
+            }
         }
 
         @media only screen and (min-width: 601px) {
-            .smartphoneLogo {
-                display: none;
-            }
-
             .contactUsSpaceOut {
                 gap: 10rem
             }
@@ -97,11 +109,6 @@
                 transform: translateY(0);
             }
         }
-
-        .fade-in-up {
-            animation: fadeInUp 0.5s ease-out forwards;
-        }
-
 
         .scrolled .nav-link {
             color: black;
@@ -120,19 +127,6 @@
             /* Change this value to adjust the thickness */
         }
 
-        .copyright {
-            position: absolute;
-            bottom: -348%;
-            right: 40%;
-        }
-
-        .logo {
-            position: absolute;
-            right: -5%;
-            bottom: 20%;
-            z-index: 100;
-        }
-
         .singaporeSkyline {
             position: absolute;
         }
@@ -147,103 +141,108 @@
     style="font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
     <!--Nav-->
     <app-navbar></app-navbar>
-    <div>
-        <img src="images/SingaporeCitySkyline.jpg" class="singaporeSkyline" />
-    </div>
-    <div class="relative w-full" data-carousel="slide">
+    <div style="height: 100vh;" class="testing">
+        <!-- Singapore Skyline Image -->
+        <img src="images/SingaporeCitySkyline.jpg" style="height: 100vh; width: 100%;"
+            class="singaporeSkyline banner imageMobileView" />
         <!-- Carousel wrapper -->
-        <div class="relative h-96 overflow-hidden rounded-lg md:h-96 mb-96" data-aos="flip-right"
-            style="color: #354183;">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out absolute block -translate-y-1/2 top-1/2 z-2" data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Powerful and effect
+        <div class="relative w-full" data-carousel="slide">
+            <div class="relative overflow-hidden rounded-lg mb-8 imageMobileView" data-aos="flip-right"
+                style="color: #354183; height: 70vh;">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out absolute block -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Powerful and effect
+                        <br>
+                        cooperation lasting for years
+                    </h1>
                     <br>
-                    cooperation lasting for years
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Simplify your business
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Simplify your business
+                        <br>
+                        We are ready to help you
+                    </h1>
                     <br>
-                    We are ready to help you
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Delivering the highest level
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Delivering the highest level
+                        <br>
+                        of professional service
+                    </h1>
                     <br>
-                    of professional service
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Powerful and effect
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Powerful and effect
+                        <br>
+                        cooperation lasting for years
+                    </h1>
                     <br>
-                    cooperation lasting for years
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Simplify your business
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Simplify your business
+                        <br>
+                        We are ready to help you
+                    </h1>
                     <br>
-                    We are ready to help you
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
-            </div>
-            <!-- Item 6 -->
-            <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2"
-                data-carousel-item>
-                <h1 class="text-5xl font-bold leading-tight smartphone pl-20 pt-9">
-                    Delivering the highest level
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
+                <!-- Item 6 -->
+                <div class="hidden duration-700 ease-in-out absolute block w-full -translate-y-1/2 top-1/2 z-2 carouselBanner"
+                    data-carousel-item>
+                    <h1 class="text-5xl font-bold leading-tight smartphone pl-20">
+                        Delivering the highest level
+                        <br>
+                        of professional service
+                    </h1>
                     <br>
-                    of professional service
-                </h1>
-                <br>
-                <a href="/aboutUs.html"
-                    class="readMoreButton bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
-                    More</a>
+                    <a href="/aboutUs.html"
+                        class="bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-20">Read
+                        More</a>
+                </div>
             </div>
         </div>
     </div>
     <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="flip-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
+                data-aos="flip-up">
                 Our Services
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+            <div class="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4"
+                style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col mb-4 md:mb-0" data-aos="zoom-in-up"
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/ITservices.png" alt="IT Services"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -255,8 +254,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col mb-4 md:mb-0" data-aos="zoom-in-up"
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/eGovernmentTechnology.jpg" alt="E-Government Technology"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -267,7 +266,7 @@
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/networkOffering.jpg" alt="Network Offerings"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -282,9 +281,10 @@
             </div>
             <br>
             <br>
-            <div class="flex justify-center space-x-4" style="padding-left: 20%; padding-right: 20%;">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+            <div class="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4"
+                style="padding-left: 20%; padding-right: 20%;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col mb-4 md:mb-0" data-aos="zoom-in-up"
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/fintechSolutions.jpg" alt="Fintech Solutions"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -297,8 +297,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col mb-4 md:mb-0" data-aos="zoom-in-up"
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/securitySolutions.jpg" alt="Security Solutions"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -309,8 +309,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col" data-aos="zoom-in-up"
-                    style="height: 600px; width: 300px;">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg flex flex-col mb-4 md:mb-0" data-aos="zoom-in-up"
+                    style="height: 600px; width: 100%; max-width: 300px;">
                     <img class="w-full h-90" src="images/technologyResource.jpg" alt="Technology Resource"
                         style="height: 260px; width: 300px;">
                     <div class="px-6 py-4 flex-grow text-center">
@@ -325,19 +325,20 @@
     </section>
     <section class="bg-white py-8">
         <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader"
+                data-aos="zoom-in-up">
                 Our Company Video
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
         </div>
-        <div class="row" style="padding-left: 20%; padding-right: 20%;">
-            <div class="col md-12" data-aos="zoom-in-up">
+        <div>
+            <div data-aos="zoom-in-up">
                 <div class="iframe-container video">
                     <iframe id="youtubeFrame" src="https://www.youtube.com/embed/UhsntWMThsQ" frameborder="1"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="border-radius: 25px; width: 100%; height: 100%;"></iframe>
+                        allowfullscreen style="border-radius: 25px; width: 60%; height: 100%;"></iframe>
                 </div>
             </div>
         </div>
@@ -345,13 +346,13 @@
         <br>
         <div class="bg-white py-8" data-aos="zoom-in-up">
             <div class="mx-auto px-2 pt-4 pb-12 text-gray-800">
-                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader">
                     The AlpSoft Outcome
                 </h2>
                 <div class="w-full mb-4">
                     <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
-                <p class="text-xl outcome text-center" style="padding-left: 20%; padding-right: 20%;">Our
+                <p class="text-xl outcome text-center fontSize" style="padding-left: 20%; padding-right: 20%;">Our
                     background in
                     working with our
                     customers in the enterprise and our capabilities in leveraging
@@ -370,7 +371,7 @@
 
     <!-- Footer -->
     <section class="text-center" style="background-color: #354183">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 fontSizeHeader">
             Contact Us
         </h2>
         <div class="w-full mb-4">
@@ -571,31 +572,6 @@
             }
             return false;
         }
-
-
-        //Carousel
-        // const carouselElement = document.getElementById('carousel-example');
-
-        // const items = [
-        //     {
-        //         position: 0,
-        //         el: document.getElementById('carousel-item-1'),
-        //     },
-        //     {
-        //         position: 1,
-        //         el: document.getElementById('carousel-item-2'),
-        //     },
-        //     {
-        //         position: 2,
-        //         el: document.getElementById('carousel-item-3'),
-        //     },
-        // ];
-
-        // instance options object
-        // const instanceOptions = {
-        //     id: 'carousel-example',
-        //     override: true
-        // };
         AOS.init({
             duration: 1200, // duration of the animation in milliseconds
             easing: 'ease-in-out', // easing function for the animation

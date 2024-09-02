@@ -7,13 +7,13 @@ class Navbar extends HTMLElement {
                 <div class="pl-4 flex items-center">
                     <a href="/index.html">
                         <img src="https://www.alpsoft-tech.com/images/logo.png" alt="AlpSoft Logo" width="300px"
-                            height="300px">
+                            height="300px" class="navLogo">
                     </a>
                 </div>
                 <div class="block lg:hidden pr-4">
                     <button id="nav-toggle"
                         class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="fill: #354183;">
                             <title>Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                         </svg>
@@ -82,13 +82,13 @@ class Navbar2 extends HTMLElement {
                 <div class="pl-4 flex items-center">
                 <a href="/index.html">
                         <img src="https://www.alpsoft-tech.com/images/logo.png" alt="AlpSoft Logo" width="300px"
-                            height="300px">
+                            height="300px" class="navLogo">
                     </a>
                 </div>
                 <div class="block lg:hidden pr-4 text-blue-500">
                     <button id="nav-toggle"
                         class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="fill: #354183;">
                             <title>Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                         </svg>
@@ -101,7 +101,7 @@ class Navbar2 extends HTMLElement {
                             <a class="inline-block py-2 px-4 no-underline cursor-pointer font-bold nav-linkOurValues responsiveDropdown"
                                 id="ourCompanyLink" role="button" data-toggle="dropdown" aria-haspopup="true">Our
                                 Company</a>
-                            <ul class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg hidden group-hover:block"
+                            <ul class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg hidden"
                                 id="dropdownMenu">
                                 <li><a class="block px-4 py-2 text-black hover:bg-gray-200" href="/ourValues.html">Our Values</a></li>
                                 <li><a class="block px-4 py-2 text-black hover:bg-gray-200" href="/ourHistory.html">Our History</a>
@@ -116,11 +116,11 @@ class Navbar2 extends HTMLElement {
                             </ul>
                         </li>
                         <li class="mr-3">
-                            <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold nav-linkOurValues responsiveDropdown"
+                            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold nav-linkOurValues responsiveDropdown"
                                 href="/awards.html">Awards</a>
                         </li>
                         <li class="mr-3">
-                            <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold nav-linkOurValues responsiveDropdown"
+                            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold nav-linkOurValues responsiveDropdown"
                                 href="/projects.html">Projects</a>
                         </li>
                     </ul>

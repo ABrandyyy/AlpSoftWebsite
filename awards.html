@@ -22,29 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
         @media only screen and (max-width: 600px) {
-            .smartphone {
-                font-size: large;
-                padding-top: 10px;
-            }
-
-            .readMoreButton {
-                height: 20px;
-                width: 20px;
-                font-size: 10px;
-                margin-inline-start: -11%;
-            }
-
             .responsiveDropdown {
                 color: black !important;
-            }
-
-            .logo {
-                display: none;
-            }
-
-            .smartphoneLogo {
-                padding-left: 30px;
-                padding-bottom: 10px;
             }
 
             .address {
@@ -52,15 +31,6 @@
                 flex-direction: column;
                 text-align: center;
                 padding-top: 10px;
-            }
-
-            .video {
-                width: 400px;
-                height: 10% !important;
-            }
-
-            .outcome {
-                text-align: center;
             }
 
             .divider {
@@ -78,13 +48,22 @@
             .awardLogo {
                 column-gap: 1px;
             }
+
+            .fontSize {
+                font-size: smaller;
+            }
+
+            .navLogo {
+                width: 200px;
+                height: 50px;
+            }
+
+            .fontSizeHeader {
+                font-size: xx-large !important;
+            }
         }
 
         @media only screen and (min-width: 601px) {
-            .smartphoneLogo {
-                display: none;
-            }
-
             .contactUsSpaceOut {
                 gap: 10rem
             }
@@ -92,24 +71,6 @@
 
         .gradient {
             background: linear-gradient(90deg, #7ca9e4 0%, #85bbee 100%);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
-        }
-
-        .gradient-5cores {
-            background: linear-gradient(90deg, #ff0000 0%, #718db2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            transition: 0.3s ease;
         }
 
         @keyframes fadeInUp {
@@ -122,10 +83,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.5s ease-out forwards;
         }
 
         .nav-linkOurValues {
@@ -181,25 +138,8 @@
             }
         }
 
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-            transition: transform 2s ease-in-out;
-        }
-
         .nowrap-text {
             white-space: nowrap;
-        }
-
-        .copyright {
-            position: absolute;
-            bottom: -164%;
-            right: 40%;
         }
     </style>
 </head>
@@ -211,7 +151,7 @@
     </app-navbar2>
     <section class="bg-white py-8">
         <div class="container max-w-5xl mx-auto m-20">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader" data-aos="zoom-in-up">
                 Awards and Recognitions
             </h2>
             <div class="w-full mb-4">
@@ -239,7 +179,7 @@
                     <img src="/images/awards/webmaster2.png" alt="webmaster2">
                 </div>
             </div>
-            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800" data-aos="zoom-in-up">
+            <h2 class="w-full text-5xl font-bold leading-tight text-center text-gray-800 fontSizeHeader" data-aos="zoom-in-up">
                 Group Achievements
             </h2>
             <div class="w-full mb-4">
@@ -247,32 +187,32 @@
             </div>
             <br>
             <div class="text-center" data-aos="zoom-in-up" style="padding-left: 20%; padding-right: 20%;">
-                <p class="heading_main text_align_center font-family text-xl text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black fontSize">•
                     Received
                     Innovation Award in Splash Awards Wireless Jam for Ultra-Wide Band (UWB) Hospital Patient tracking
                     application which was also featured in UWB POC lab in IDA</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black fontSize">•
                     Nominated
                     for Best of ICT Business Application in the ICT Asia Pacific Award held in Thailand, Bangkok - for
                     Petro-Chem Terminal System.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black fontSize">•
                     Received
                     the GOLD award by the American Association of Webmasters.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black fontSize">•
                     Finalist in
                     the Singapore IT Youth Award 2004 on Macromedia technology showcases.</p>
                 <br>
-                <p class="heading_main text_align_center font-family text-xl text-black">•
+                <p class="heading_main text_align_center font-family text-xl text-black fontSize">•
                     Launched a
                     Job Automation Service (iFORM+) with SingTel in September 2009, allowing companies to eliminate data
                     transfer from paper forms to computers.</p>
             </div>
     </section>
     <section class="text-center" style="background-color: #354183">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 pb-9">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white pt-9 fontSizeHeader">
             Contact Us
         </h2>
         <div class="w-full mb-4">
@@ -445,33 +385,6 @@
         });
     </script>
     <script>
-        /*Toggle dropdown list*/
-        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-        //Carousel
-        const carouselElement = document.getElementById('carousel-example');
-
-        const items = [
-            {
-                position: 0,
-                el: document.getElementById('carousel-item-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-item-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-item-3'),
-            },
-        ];
-
-        // instance options object
-        const instanceOptions = {
-            id: 'carousel-example',
-            override: true
-        };
-
         var navMenuDiv = document.getElementById("nav-content");
         var navMenu = document.getElementById("nav-toggle");
 
